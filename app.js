@@ -602,7 +602,38 @@ if(icons){
         (foundCaches.pig ? "😊 " : "❓");
 
 }
+const livingIcons =
+document.getElementById(
+    "living-room-icons"
+);
 
+if(livingIcons){
+
+    livingIcons.innerHTML =
+
+        (foundCaches.lenivost
+            ? "😊 "
+            : "📍 ")
+
+        +
+
+        (foundCaches.london
+            ? "😊 "
+            : "🌍 ")
+
+        +
+
+        (foundCaches.strelitzia
+            ? "😊 "
+            : "📍 ")
+
+        +
+
+        (foundCaches.knihomol
+            ? "😊 "
+            : "❓");
+
+}
 }
 function checkPig(){
 
