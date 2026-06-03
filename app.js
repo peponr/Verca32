@@ -58,3 +58,6 @@ function openCache(cacheId){
 
     showScreen("cache");
 }
+function openCache(cacheId){
+    alert(cacheId);
+}
