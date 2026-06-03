@@ -366,7 +366,16 @@ if(cacheId === "knihomol"){
         <p>
             D: 3 | T: 1.5
         </p>
+     
+     <p>
+        Zadaj výsledný kód.
+    </p>
 
+    <input
+        id="knihomol-answer"
+        type="number">
+
+    <br><br>
         <p>
             V našej domácnosti sa nachádza niekoľko
             kuchárskych kníh.
