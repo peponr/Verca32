@@ -168,7 +168,7 @@ cacheContent.innerHTML = `
       `<button
           class="btn"
           onclick="checkPig()">
-          Zalogovať odpoveď
+          Overiť odpoveď
        </button>`
     }
 
@@ -367,16 +367,7 @@ if(cacheId === "knihomol"){
             D: 3 | T: 1.5
         </p>
      
-     <p>
-        Zadaj výsledný kód.
-    </p>
-
-    <input
-        id="knihomol-answer"
-        type="number">
-
-    <br><br>
-        <p>
+          <p>
             V našej domácnosti sa nachádza niekoľko
             kuchárskych kníh.
 
@@ -399,16 +390,25 @@ if(cacheId === "knihomol"){
         <br><br>
 
         ${
-          foundCaches.knihomol
-          ?
-          `<p>😊 Keška už bola nájdená.</p>`
-          :
-          `<button
-              class="btn"
-              onclick="checkKnihomol()">
-          Zalogovať odpoveď
-           </button>`
-        }
+  foundCaches.knihomol
+  ?
+  `<p>😊 Keška už bola nájdená.</p>`
+  :
+  `
+    <input
+        id="knihomol-answer"
+        type="text"
+        placeholder="Výsledný kód">
+
+    <br><br>
+
+    <button
+        class="btn"
+        onclick="checkKnihomol()">
+        Overiť odpoveď
+    </button>
+  `
+}
 
     `;
 }
@@ -626,17 +626,20 @@ function checkPig(){
 function checkKnihomol(){
 
     const answer =
-        document.getElementById("knihomol-answer").value;
+        document.getElementById(
+            "knihomol-answer"
+        ).value;
 
     if(answer == "1234"){
 
-        logCache("knihomol");
-
+        logCache(
+            "knihomol"
+        );
 
     }else{
 
         alert(
-            "❌ Nesprávna odpoveď"
+            "❌ Nesprávny kód"
         );
 
     }
