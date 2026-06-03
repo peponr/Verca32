@@ -396,8 +396,8 @@ if(cacheId === "knihomol"){
           :
           `<button
               class="btn"
-              onclick="logCache('knihomol')">
-              Zalogovať nález
+              onclick="checkKnihomol()">
+          Zalogovať odpoveď
            </button>`
         }
 
