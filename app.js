@@ -249,6 +249,36 @@ if(foundCaches.smilstvo) count++;
 if(foundCaches.yucca) count++;
 if(foundCaches.pig) count++;
 
+const livingRoomCard =
+document.getElementById(
+"living-room-card"
+);
+
+const livingRoomText =
+document.getElementById(
+"living-room-text"
+);
+
+if(count >= 3){
+
+
+if(livingRoomCard){
+
+    livingRoomCard
+        .classList
+        .remove("locked");
+
+}
+
+if(livingRoomText){
+
+    livingRoomText.innerText =
+        "🎉 Odomknuté";
+
+}
+
+}
+
 const progress =
     document.getElementById(
         "progress-text"
