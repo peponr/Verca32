@@ -408,6 +408,63 @@ if(cacheId === "knihomol"){
 
     `;
 }
+if(cacheId === "pizza"){
+
+    cacheContent.innerHTML = `
+        <button
+            class="btn"
+            onclick="showScreen('kuchyna')">
+            ← Späť
+        </button>
+
+        <h2>
+            Pizza Time!
+        </h2>
+
+        <p>
+            Typ: Tradičná
+        </p>
+
+        <p>
+            D: 2 | T: 1
+        </p>
+
+        <p>
+            Pizza patrí medzi najobľúbenejšie jedlá
+            na svete.
+
+            Táto keška sa ukrýva na mieste,
+            ktoré s pizzou úzko súvisí.
+        </p>
+
+        <button
+            class="btn"
+            onclick="toggleHint('hint-pizza')">
+            Nápoveda
+        </button>
+
+        <div
+            id="hint-pizza"
+            class="hint">
+            mrazená
+        </div>
+
+        <br><br>
+
+        ${
+          foundCaches.pizza
+          ?
+          `<p>😊 Keška už bola nájdená.</p>`
+          :
+          `<button
+              class="btn"
+              onclick="logCache('pizza')">
+              Zalogovať nález
+           </button>`
+        }
+
+    `;
+}
   showScreen("cache");
 }
 function toggleHint(id){
@@ -518,6 +575,18 @@ if(knihomolPin){
         : "❓";
 
 }
+  
+const pizzaPin =
+document.getElementById("pin-pizza");
+
+if(pizzaPin){
+
+    pizzaPin.innerHTML =
+    foundCaches.pizza
+        ? "😊"
+        : "📍";
+
+}
 let count = 0;
 
 if(foundCaches.smilstvo) count++;
@@ -527,7 +596,8 @@ if(foundCaches.lenivost) count++;
 if(foundCaches.london) count++;
 if(foundCaches.strelitzia) count++;
 if(foundCaches.knihomol) count++;
-
+if(foundCaches.pizza) count++;
+  
 const livingRoomCard =
 document.getElementById(
 "living-room-card"
@@ -655,17 +725,19 @@ if(
 
     }
 
-    if(kitchenButton){
+    if(kitchenIcons){
 
-        kitchenButton.innerHTML = `
-            <button
-                class="btn"
-                onclick="showScreen('kuchyna')">
-                Vstúpiť
-            </button>
-        `;
+    kitchenIcons.innerHTML =
 
-    }
+        (foundCaches.pizza
+            ? "😊 "
+            : "📍 ")
+
+        +
+
+        "📍 ❓ ❓";
+
+}
 
 }
 const progress =
