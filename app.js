@@ -165,6 +165,8 @@ if(hint.style.display === "block"){
 }else{
     hint.style.display = "block";
 }
+
+}
 function logCache(cacheId){
 
 ```
