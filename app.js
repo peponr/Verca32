@@ -544,6 +544,17 @@ document.getElementById(
 
 if(count >= 3){
 
+  const livingRoomIcons =
+document.getElementById(
+    "living-room-icons"
+);
+
+if(livingRoomIcons){
+
+    livingRoomIcons.style.display =
+        "block";
+
+}
 const livingRoomTitle =
 document.getElementById(
     "living-room-title"
