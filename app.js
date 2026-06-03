@@ -55,7 +55,84 @@ function openCache(cacheId){
             </div>
         `;
     }
+if(cacheId === "yucca"){
 
+    cacheContent.innerHTML = `
+        <button
+            class="btn"
+            onclick="showScreen('spalna')">
+            ← Späť
+        </button>
+
+        <h2>
+            Botanicals #01 - Yucca Elephantipes
+        </h2>
+
+        <p>
+            Typ: Tradičná
+        </p>
+
+        <p>
+            D: 2 | T: 2
+        </p>
+
+        <p>
+            Yucca je rod trvalých rastlín z čeľade
+            Asparagaceae...
+        </p>
+
+        <button
+            class="btn"
+            onclick="toggleHint('hint-yucca')">
+            Nápoveda
+        </button>
+
+        <div
+            id="hint-yucca"
+            class="hint">
+            pod zemou
+        </div>
+    `;
+}
+if(cacheId === "pig"){
+
+    cacheContent.innerHTML = `
+        <button
+            class="btn"
+            onclick="showScreen('spalna')">
+            ← Späť
+        </button>
+
+        <h2>
+            Pink Pig Mystery
+        </h2>
+
+        <p>
+            Typ: Mystery
+        </p>
+
+        <p>
+            D: 2.5 | T: 2
+        </p>
+
+        <p>
+            Koľko eur mal Tomáš
+            v prasiatku na začiatku?
+        </p>
+
+        <input
+            id="pig-answer"
+            type="number">
+
+        <br><br>
+
+        <button
+            class="btn"
+            onclick="checkPig()">
+            Zalogovať odpoveď
+        </button>
+    `;
+}
     showScreen("cache");
 }
 function toggleHint(id){
@@ -68,5 +145,25 @@ if(hint.style.display === "block"){
 }else{
     hint.style.display = "block";
 }
+
+}
+function checkPig(){
+
+    const answer =
+        document.getElementById("pig-answer").value;
+
+    if(answer == "60"){
+
+        alert(
+            "😊 Správna odpoveď!"
+        );
+
+    }else{
+
+        alert(
+            "❌ Nesprávna odpoveď"
+        );
+
+    }
 
 }
