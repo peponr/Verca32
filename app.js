@@ -594,7 +594,80 @@ if(livingRoomButton){
 
 }
 }
+const kitchenCard =
+document.getElementById(
+    "kitchen-card"
+);
 
+const kitchenTitle =
+document.getElementById(
+    "kitchen-title"
+);
+
+const kitchenText =
+document.getElementById(
+    "kitchen-text"
+);
+
+const kitchenButton =
+document.getElementById(
+    "kitchen-button"
+);
+
+const kitchenIcons =
+document.getElementById(
+    "kitchen-icons"
+);
+
+if(
+    foundCaches.lenivost &&
+    foundCaches.london &&
+    foundCaches.strelitzia &&
+    foundCaches.knihomol
+){
+
+    if(kitchenCard){
+
+        kitchenCard
+            .classList
+            .remove("locked");
+
+    }
+
+    if(kitchenTitle){
+
+        kitchenTitle.innerText =
+            "🍳 Kuchyňa";
+
+    }
+
+    if(kitchenText){
+
+        kitchenText.style.display =
+            "none";
+
+    }
+
+    if(kitchenIcons){
+
+        kitchenIcons.innerHTML =
+            "📍 📍 ❓ ❓";
+
+    }
+
+    if(kitchenButton){
+
+        kitchenButton.innerHTML = `
+            <button
+                class="btn"
+                onclick="showScreen('kuchyna')">
+                Vstúpiť
+            </button>
+        `;
+
+    }
+
+}
 const progress =
     document.getElementById(
         "progress-text"
