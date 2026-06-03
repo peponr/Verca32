@@ -1,3 +1,8 @@
+let foundCaches =
+JSON.parse(
+localStorage.getItem("foundCaches")
+) || {};
+
 function showScreen(id){
 
   document
@@ -145,6 +150,62 @@ if(hint.style.display === "block"){
 }else{
     hint.style.display = "block";
 }
+function logCache(cacheId){
+
+```
+foundCaches[cacheId] = true;
+
+localStorage.setItem(
+    "foundCaches",
+    JSON.stringify(foundCaches)
+);
+
+updateProgress();
+
+alert(
+    "😊 Keška bola úspešne zalogovaná."
+);
+
+showScreen("home");
+```
+
+}
+}
+function updateProgress(){
+
+```
+let count = 0;
+
+if(foundCaches.smilstvo) count++;
+if(foundCaches.yucca) count++;
+if(foundCaches.pig) count++;
+
+const progress =
+    document.getElementById(
+        "progress-text"
+    );
+
+if(progress){
+
+    progress.innerText =
+        "📍 " + count + " / 13 kešiek";
+
+}
+
+const icons =
+    document.getElementById(
+        "spalna-icons"
+    );
+
+if(icons){
+
+    icons.innerHTML =
+        (foundCaches.smilstvo ? "😊 " : "📍 ") +
+        (foundCaches.yucca ? "😊 " : "📍 ") +
+        (foundCaches.pig ? "😊 " : "❓");
+
+}
+```
 
 }
 function checkPig(){
