@@ -276,7 +276,22 @@ if(livingRoomText){
         "🎉 Odomknuté";
 
 }
+const livingRoomButton =
+document.getElementById(
+    "living-room-button"
+);
 
+if(livingRoomButton){
+
+    livingRoomButton.innerHTML = `
+        <button
+            class="btn"
+            onclick="showScreen('obyvacka')">
+            Vstúpiť
+        </button>
+    `;
+
+}
 }
 
 const progress =
