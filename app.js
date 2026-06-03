@@ -58,6 +58,14 @@ function openCache(cacheId){
                 class="hint">
                 vnútri
             </div>
+
+            <br><br>
+
+<button
+ class="btn"
+ onclick="logCache('smilstvo')">
+Zalogovať nález </button>
+
         `;
     }
 if(cacheId === "yucca"){
@@ -97,6 +105,13 @@ if(cacheId === "yucca"){
             class="hint">
             pod zemou
         </div>
+        <br><br>
+
+<button
+ class="btn"
+ onclick="logCache('yucca')">
+Zalogovať nález </button>
+
     `;
 }
 if(cacheId === "pig"){
@@ -215,9 +230,8 @@ function checkPig(){
 
     if(answer == "60"){
 
-        alert(
-            "😊 Správna odpoveď!"
-        );
+        logCache("pig");
+
 
     }else{
 
