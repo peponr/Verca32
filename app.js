@@ -175,7 +175,61 @@ cacheContent.innerHTML = `
 `;
 
 }
+if(cacheId === "lenivost"){
 
+    cacheContent.innerHTML = `
+        <button
+            class="btn"
+            onclick="showScreen('obyvacka')">
+            ← Späť
+        </button>
+
+        <h2>
+            7 smrteľných hriechov - lenivosť
+        </h2>
+
+        <p>
+            Typ: Tradičná
+        </p>
+
+        <p>
+            D: 2 | T: 2
+        </p>
+
+        <p>
+            Lenivosť (Acedia):
+            Neochota konať dobro,
+            pracovať alebo plniť svoje povinnosti.
+        </p>
+
+        <button
+            class="btn"
+            onclick="toggleHint('hint-lenivost')">
+            Nápoveda
+        </button>
+
+        <div
+            id="hint-lenivost"
+            class="hint">
+            sem doplníme tvoj hint
+        </div>
+
+        <br><br>
+
+        ${
+          foundCaches.lenivost
+          ?
+          `<p>😊 Keška už bola nájdená.</p>`
+          :
+          `<button
+              class="btn"
+              onclick="logCache('lenivost')">
+              Zalogovať nález
+           </button>`
+        }
+
+    `;
+}
     showScreen("cache");
 }
 function toggleHint(id){
@@ -242,12 +296,23 @@ if(pigPin){
         : "❓";
 
 }
+const lenivostPin =
+document.getElementById("pin-lenivost");
 
+if(lenivostPin){
+
+    lenivostPin.innerHTML =
+    foundCaches.lenivost
+        ? "😊"
+        : "📍";
+
+}
 let count = 0;
 
 if(foundCaches.smilstvo) count++;
 if(foundCaches.yucca) count++;
 if(foundCaches.pig) count++;
+if(foundCaches.lenivost) count++;
 
 const livingRoomCard =
 document.getElementById(
