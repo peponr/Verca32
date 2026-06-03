@@ -58,6 +58,15 @@ function openCache(cacheId){
 
     showScreen("cache");
 }
-function openCache(cacheId){
-    alert(cacheId);
+function toggleHint(id){
+
+const hint =
+    document.getElementById(id);
+
+if(hint.style.display === "block"){
+    hint.style.display = "none";
+}else{
+    hint.style.display = "block";
+}
+
 }
