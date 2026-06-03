@@ -346,6 +346,63 @@ if(cacheId === "strelitzia"){
 
     `;
 }
+if(cacheId === "knihomol"){
+
+    cacheContent.innerHTML = `
+        <button
+            class="btn"
+            onclick="showScreen('obyvacka')">
+            ← Späť
+        </button>
+
+        <h2>
+            Knihomoľ - varenie
+        </h2>
+
+        <p>
+            Typ: Mystery
+        </p>
+
+        <p>
+            D: 3 | T: 1.5
+        </p>
+
+        <p>
+            V našej domácnosti sa nachádza niekoľko
+            kuchárskych kníh.
+
+            Pomocou nich vyrieš úlohy
+            a dopracuj sa k výslednému riešeniu.
+        </p>
+
+        <button
+            class="btn"
+            onclick="toggleHint('hint-knihomol')">
+            Nápoveda
+        </button>
+
+        <div
+            id="hint-knihomol"
+            class="hint">
+            Pohlreich, Ramsay, 1001 receptov
+        </div>
+
+        <br><br>
+
+        ${
+          foundCaches.knihomol
+          ?
+          `<p>😊 Keška už bola nájdená.</p>`
+          :
+          `<button
+              class="btn"
+              onclick="logCache('knihomol')">
+              Zalogovať nález
+           </button>`
+        }
+
+    `;
+}
   showScreen("cache");
 }
 function toggleHint(id){
@@ -445,6 +502,17 @@ if(strelitziaPin){
         : "📍";
 
 }
+const knihomolPin =
+document.getElementById("pin-knihomol");
+
+if(knihomolPin){
+
+    knihomolPin.innerHTML =
+    foundCaches.knihomol
+        ? "😊"
+        : "❓";
+
+}
 let count = 0;
 
 if(foundCaches.smilstvo) count++;
@@ -453,6 +521,7 @@ if(foundCaches.pig) count++;
 if(foundCaches.lenivost) count++;
 if(foundCaches.london) count++;
 if(foundCaches.strelitzia) count++;
+if(foundCaches.knihomol) count++;
 
 const livingRoomCard =
 document.getElementById(
