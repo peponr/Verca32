@@ -61,10 +61,17 @@ function openCache(cacheId){
 
             <br><br>
 
-<button
- class="btn"
- onclick="logCache('smilstvo')">
-Zalogovať nález </button>
+${
+  foundCaches.smilstvo
+  ?
+  `<p>😊 Keška už bola nájdená.</p>`
+  :
+  `<button
+      class="btn"
+      onclick="logCache('smilstvo')">
+      Zalogovať nález
+   </button>`
+}
 
         `;
     }
@@ -107,52 +114,68 @@ if(cacheId === "yucca"){
         </div>
         <br><br>
 
-<button
- class="btn"
- onclick="logCache('yucca')">
-Zalogovať nález </button>
+${
+  foundCaches.yucca
+  ?
+  `<p>😊 Keška už bola nájdená.</p>`
+  :
+  `<button
+      class="btn"
+      onclick="logCache('yucca')">
+      Zalogovať nález
+   </button>`
+}
 
     `;
 }
 if(cacheId === "pig"){
 
-    cacheContent.innerHTML = `
-        <button
-            class="btn"
-            onclick="showScreen('spalna')">
-            ← Späť
-        </button>
+cacheContent.innerHTML = `
+    <button
+        class="btn"
+        onclick="showScreen('spalna')">
+        ← Späť
+    </button>
 
-        <h2>
-            Pink Pig Mystery
-        </h2>
+    <h2>
+        Pink Pig Mystery
+    </h2>
 
-        <p>
-            Typ: Mystery
-        </p>
+    <p>
+        Typ: Mystery
+    </p>
 
-        <p>
-            D: 2.5 | T: 2
-        </p>
+    <p>
+        D: 2.5 | T: 2
+    </p>
 
-        <p>
-            Koľko eur mal Tomáš
-            v prasiatku na začiatku?
-        </p>
+    <p>
+        Koľko eur mal Tomáš
+        v prasiatku na začiatku?
+    </p>
 
-        <input
-            id="pig-answer"
-            type="number">
+    <input
+        id="pig-answer"
+        type="number">
 
-        <br><br>
+    <br><br>
 
-        <button
-            class="btn"
-            onclick="checkPig()">
-            Zalogovať odpoveď
-        </button>
-    `;
+    ${
+      foundCaches.pig
+      ?
+      `<p>😊 Keška už bola nájdená.</p>`
+      :
+      `<button
+          class="btn"
+          onclick="checkPig()">
+          Zalogovať odpoveď
+       </button>`
+    }
+
+`;
+
 }
+
     showScreen("cache");
 }
 function toggleHint(id){
