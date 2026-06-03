@@ -614,6 +614,25 @@ function checkPig(){
     }
 
 }
+function checkKnihomol(){
+
+    const answer =
+        document.getElementById("knihomol-answer").value;
+
+    if(answer == "1234"){
+
+        logCache("knihomol");
+
+
+    }else{
+
+        alert(
+            "❌ Nesprávna odpoveď"
+        );
+
+    }
+
+}
 updateProgress();
 
 function resetProgress(){
