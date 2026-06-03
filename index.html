@@ -7,13 +7,18 @@ content="width=device-width, initial-scale=1">
 <div id="home" class="screen active">
 <div class="header"> <h1>🎂 Happy Birthday Geocaching</h1>
 <div> 👤 Ferčiatko </div>
-<div> 📍 0 / 13 kešiek </div> </div>
+<div> <div id="progress-text">
+    📍 0 / 13 kešiek
+</div>
+ </div> </div>
 <div class="carousel">
 <div class="card">
 <img src="spalna.jpg">
 <div class="content">
 <h2>🛏️ Spálňa</h2>
-<div> 📍 📍 ❓ </div>
+<div id="spalna-icons">
+    📍 📍 ❓
+</div>
 <br>
 <button class="btn" onclick="showScreen('spalna')"> Vstúpiť </button>
 </div> </div>
@@ -46,6 +51,7 @@ content="width=device-width, initial-scale=1">
     onclick="openCache('smilstvo')">
     📍
 </button>
+    <br><br>
 <button
     class="cache-pin pin-yucca"
     onclick="openCache('yucca')">
