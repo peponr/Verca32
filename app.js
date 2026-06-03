@@ -544,6 +544,17 @@ document.getElementById(
 
 if(count >= 3){
 
+const livingRoomTitle =
+document.getElementById(
+    "living-room-title"
+);
+
+if(livingRoomTitle){
+
+    livingRoomTitle.innerText =
+        "🛋️ Obývačka";
+
+}
 
 if(livingRoomCard){
 
