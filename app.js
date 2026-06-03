@@ -291,7 +291,62 @@ if(cacheId === "london"){
 
     `;
 }
-    showScreen("cache");
+if(cacheId === "strelitzia"){
+
+    cacheContent.innerHTML = `
+        <button
+            class="btn"
+            onclick="showScreen('obyvacka')">
+            ← Späť
+        </button>
+
+        <h2>
+            Botanicals #02 - Strelitzia Nicolai
+        </h2>
+
+        <p>
+            Typ: Tradičná
+        </p>
+
+        <p>
+            D: 2 | T: 2
+        </p>
+
+        <p>
+            Strelitzia Nicolai, známa aj ako biela strelícia,
+            patrí medzi najimpozantnejšie izbové rastliny.
+            Je obľúbená vďaka svojim veľkým listom a exotickému vzhľadu.
+        </p>
+
+        <button
+            class="btn"
+            onclick="toggleHint('hint-strelitzia')">
+            Nápoveda
+        </button>
+
+        <div
+            id="hint-strelitzia"
+            class="hint">
+            visí
+        </div>
+
+        <br><br>
+
+        ${
+          foundCaches.strelitzia
+          ?
+          `<p>😊 Keška už bola nájdená.</p>`
+          :
+          `<button
+              class="btn"
+              onclick="logCache('strelitzia')">
+              Zalogovať nález
+           </button>`
+        }
+
+    `;
+}
+  showScreen("cache");
 }
 function toggleHint(id){
 
@@ -379,6 +434,17 @@ if(londonPin){
         : "🌍";
 
 }
+const strelitziaPin =
+document.getElementById("pin-strelitzia");
+
+if(strelitziaPin){
+
+    strelitziaPin.innerHTML =
+    foundCaches.strelitzia
+        ? "😊"
+        : "📍";
+
+}
 let count = 0;
 
 if(foundCaches.smilstvo) count++;
@@ -386,6 +452,7 @@ if(foundCaches.yucca) count++;
 if(foundCaches.pig) count++;
 if(foundCaches.lenivost) count++;
 if(foundCaches.london) count++;
+if(foundCaches.strelitzia) count++;
 
 const livingRoomCard =
 document.getElementById(
