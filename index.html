@@ -42,10 +42,23 @@ content="width=device-width, initial-scale=1">
 <br><br>
 <div class="room-image">
 <img src="spalna.jpg">
-<button class="cache-pin pin-smilstvo"> 📍 </button>
+<button
+    class="cache-pin pin-smilstvo"
+    onclick="openCache('smilstvo')">
+    📍
+</button>
 <button class="cache-pin pin-yucca"> 📍 </button>
 <button class="cache-pin pin-pig"> ❓ </button>
 </div>
+</div>
+<div
+    id="cache"
+    class="screen">
+
+    <div
+        id="cache-content"
+        class="cache-content">
+    </div>
 </div>
 <script src="app.js"></script>
 </body> </html>
