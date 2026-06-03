@@ -149,14 +149,10 @@ cacheContent.innerHTML = `
         D: 2.5 | T: 2
     </p>
 
-    <p>
-        Koľko eur mal Tomáš
-        v prasiatku na začiatku?
-    </p>
-
     <input
         id="pig-answer"
-        type="number">
+        type="number"
+        placeholder="Koľko eur mal Tomáš?">
 
     <br><br>
 
@@ -397,7 +393,7 @@ if(cacheId === "knihomol"){
   `
     <input
         id="knihomol-answer"
-        type="text"
+        type="number"
         placeholder="Výsledný kód">
 
     <br><br>
