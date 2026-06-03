@@ -296,3 +296,14 @@ function checkPig(){
 
 }
 updateProgress();
+
+function resetProgress(){
+
+localStorage.removeItem(
+    "foundCaches"
+);
+
+location.reload();
+
+}
+
