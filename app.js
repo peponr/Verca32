@@ -288,7 +288,7 @@ if(cacheId === "london"){
     `;
 }
 if(cacheId === "strelitzia"){
-
+ alert("STRELITZIA");
     cacheContent.innerHTML = `
         <button
             class="btn"
@@ -409,6 +409,7 @@ if(cacheId === "knihomol"){
     `;
 }
 if(cacheId === "pizza"){
+alert("PIZZA");
 
     cacheContent.innerHTML = `
         <button
