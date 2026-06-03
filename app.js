@@ -627,29 +627,37 @@ document.getElementById(
 
 if(livingIcons){
 
-    livingIcons.innerHTML =
+    if(count >= 3){
 
-        (foundCaches.lenivost
-            ? "😊 "
-            : "📍 ")
+        livingIcons.innerHTML =
 
-        +
+            (foundCaches.lenivost
+                ? "😊 "
+                : "📍 ")
 
-        (foundCaches.london
-            ? "😊 "
-            : "🌍 ")
+            +
 
-        +
+            (foundCaches.london
+                ? "😊 "
+                : "🌍 ")
 
-        (foundCaches.strelitzia
-            ? "😊 "
-            : "📍 ")
+            +
 
-        +
+            (foundCaches.strelitzia
+                ? "😊 "
+                : "📍 ")
 
-        (foundCaches.knihomol
-            ? "😊 "
-            : "❓");
+            +
+
+            (foundCaches.knihomol
+                ? "😊 "
+                : "❓");
+
+    }else{
+
+        livingIcons.innerHTML = "";
+
+    }
 
 }
 }
