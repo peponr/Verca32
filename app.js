@@ -230,6 +230,67 @@ if(cacheId === "lenivost"){
 
     `;
 }
+if(cacheId === "london"){
+
+    cacheContent.innerHTML = `
+        <button
+            class="btn"
+            onclick="showScreen('obyvacka')">
+            ← Späť
+        </button>
+
+        <h2>
+            Londýn - New York - Krabi a späť
+        </h2>
+
+        <p>
+            Typ: Multina
+        </p>
+
+        <p>
+            D: 4.5 | T: 3
+        </p>
+
+        <p>
+            Táto multina ťa zoberie na krátku cestu okolo sveta.
+            A bytu.
+
+            Na štyroch stagoch nájdeš 4 číslice,
+            ktoré ti pomôžu nájsť riešenie úlohy.
+
+            K finálu:
+            Som miestnosť v tvojom byte,
+            ale vkročiť do mňa nemôžeš.
+        </p>
+
+        <button
+            class="btn"
+            onclick="toggleHint('hint-london')">
+            Nápoveda
+        </button>
+
+        <div
+            id="hint-london"
+            class="hint">
+            magnet
+        </div>
+
+        <br><br>
+
+        ${
+          foundCaches.london
+          ?
+          `<p>😊 Keška už bola nájdená.</p>`
+          :
+          `<button
+              class="btn"
+              onclick="logCache('london')">
+              Zalogovať nález
+           </button>`
+        }
+
+    `;
+}
     showScreen("cache");
 }
 function toggleHint(id){
@@ -307,12 +368,24 @@ if(lenivostPin){
         : "📍";
 
 }
+const londonPin =
+document.getElementById("pin-london");
+
+if(londonPin){
+
+    londonPin.innerHTML =
+    foundCaches.london
+        ? "😊"
+        : "🌍";
+
+}
 let count = 0;
 
 if(foundCaches.smilstvo) count++;
 if(foundCaches.yucca) count++;
 if(foundCaches.pig) count++;
 if(foundCaches.lenivost) count++;
+if(foundCaches.london) count++;
 
 const livingRoomCard =
 document.getElementById(
