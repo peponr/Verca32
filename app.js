@@ -169,7 +169,6 @@ if(hint.style.display === "block"){
 }
 function logCache(cacheId){
 
-```
 foundCaches[cacheId] = true;
 
 localStorage.setItem(
@@ -184,13 +183,10 @@ alert(
 );
 
 showScreen("home");
-```
 
-}
 }
 function updateProgress(){
 
-```
 let count = 0;
 
 if(foundCaches.smilstvo) count++;
@@ -222,7 +218,6 @@ if(icons){
         (foundCaches.pig ? "😊 " : "❓");
 
 }
-```
 
 }
 function checkPig(){
