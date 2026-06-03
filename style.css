@@ -139,6 +139,10 @@ body{
     left:75%;
     top:25%;
 }
+
+#living-room-icons{
+    display:none;
+}
 .pin-knihomol{
     left:20%;
     top:35%;
