@@ -242,3 +242,8 @@ function checkPig(){
     }
 
 }
+updateProgress();
+
+
+
+
