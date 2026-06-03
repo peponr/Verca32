@@ -210,6 +210,39 @@ showScreen("home");
 }
 function updateProgress(){
 
+const smilstvoPin =
+document.getElementById("pin-smilstvo");
+
+if(smilstvoPin){
+
+    smilstvoPin.innerHTML =
+    foundCaches.smilstvo
+        ? "😊"
+        : "📍";
+}
+const yuccaPin =
+document.getElementById("pin-yucca");
+
+if(yuccaPin){
+
+    yuccaPin.innerHTML =
+    foundCaches.yucca
+        ? "😊"
+        : "📍";
+
+}
+const pigPin =
+document.getElementById("pin-pig");
+
+if(pigPin){
+
+    pigPin.innerHTML =
+    foundCaches.pig
+        ? "😊"
+        : "❓";
+
+}
+
 let count = 0;
 
 if(foundCaches.smilstvo) count++;
@@ -263,36 +296,3 @@ function checkPig(){
 
 }
 updateProgress();
-const smilstvoPin =
-document.getElementById("pin-smilstvo");
-
-if(smilstvoPin){
-
-    smilstvoPin.innerHTML =
-    foundCaches.smilstvo
-        ? "😊"
-        : "📍";
-}
-const yuccaPin =
-document.getElementById("pin-yucca");
-
-if(yuccaPin){
-
-    yuccaPin.innerHTML =
-    foundCaches.yucca
-        ? "😊"
-        : "📍";
-
-}
-const pigPin =
-document.getElementById("pin-pig");
-
-if(pigPin){
-
-    pigPin.innerHTML =
-    foundCaches.pig
-        ? "😊"
-        : "❓";
-
-}
-
