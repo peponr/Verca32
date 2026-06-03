@@ -567,7 +567,7 @@ if(livingRoomCard){
 if(livingRoomText){
 
     livingRoomText.innerText =
-        "🎉 Odomknuté";
+        "none";
 
 }
 const livingRoomButton =
