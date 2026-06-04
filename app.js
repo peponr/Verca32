@@ -43,9 +43,9 @@ function openCache(cacheId){
                 D: 2 | T: 1
             </p>
 
-            <p>
+           <div class="cache-description">
                 Sedem hlavných hriechov tvorí tradičný zoznam nerestí...
-            </p>
+            </div>
 
             <button
                 class="btn"
@@ -96,10 +96,10 @@ if(cacheId === "yucca"){
             D: 2 | T: 2
         </p>
 
-        <p>
+        <div class="cache-description">
             Yucca je rod trvalých rastlín z čeľade
             Asparagaceae...
-        </p>
+        </div>
 
         <button
             class="btn"
@@ -148,7 +148,11 @@ cacheContent.innerHTML = `
     <p>
         D: 2.5 | T: 2
     </p>
-
+    
+    <div class="cache-description">
+    smerdzi mi cikulka
+    </div>
+    
     <input
         id="pig-answer"
         type="number"
@@ -192,11 +196,11 @@ if(cacheId === "lenivost"){
             D: 2 | T: 2
         </p>
 
-        <p>
+        <div class="cache-description">
             Lenivosť (Acedia):
             Neochota konať dobro,
             pracovať alebo plniť svoje povinnosti.
-        </p>
+        </div>
 
         <button
             class="btn"
@@ -247,7 +251,7 @@ if(cacheId === "london"){
             D: 4.5 | T: 3
         </p>
 
-        <p>
+        <div class="cache-description">
             Táto multina ťa zoberie na krátku cestu okolo sveta.
             A bytu.
 
@@ -257,7 +261,7 @@ if(cacheId === "london"){
             K finálu:
             Som miestnosť v tvojom byte,
             ale vkročiť do mňa nemôžeš.
-        </p>
+        </div>
 
         <button
             class="btn"
@@ -308,11 +312,11 @@ if(cacheId === "strelitzia"){
             D: 2 | T: 2
         </p>
 
-        <p>
+        <div class="cache-description">
             Strelitzia Nicolai, známa aj ako biela strelícia,
             patrí medzi najimpozantnejšie izbové rastliny.
             Je obľúbená vďaka svojim veľkým listom a exotickému vzhľadu.
-        </p>
+        </div>
 
         <button
             class="btn"
@@ -363,13 +367,13 @@ if(cacheId === "knihomol"){
             D: 3 | T: 1.5
         </p>
      
-          <p>
+          <div class="cache-description">
             V našej domácnosti sa nachádza niekoľko
             kuchárskych kníh.
 
             Pomocou nich vyrieš úlohy
             a dopracuj sa k výslednému riešeniu.
-        </p>
+        </div>
 
         <button
             class="btn"
@@ -429,10 +433,10 @@ if(cacheId === "pizza"){
             D: 2 | T: 1
         </p>
 
-        <p>
+        <div class="cache-description">
             Pizza patrí medzi najobľúbenejšie jedlá
             na svete.
-        </p>
+        </div>
 
         <button
             class="btn"
@@ -483,10 +487,10 @@ if(cacheId === "obzerstvo"){
             D: 2 | T: 1
         </p>
 
-        <p>
+        <div class="cache-description">
             Obžerstvo predstavuje
             nadmerné užívanie jedla a nápojov.
-        </p>
+        </div>
 
         <button
             class="btn"
@@ -537,11 +541,11 @@ if(cacheId === "epipremnum"){
             D: 3 | T: 1.5
         </p>
 
-        <p>
+        <div class="cache-description">
             Epipremnum patrí medzi najobľúbenejšie
             izbové rastliny. Pre vyriešenie tejto
             mystery budeš musieť preskúmať jej okolie.
-        </p>
+        </div>
 
         <button
             class="btn"
@@ -601,10 +605,10 @@ if(cacheId === "zima"){
             D: 3 | T: 1.5
         </p>
 
-        <p>
+        <div class="cache-description">
             Nájdi správne riešenie
             a získaj finálny kód.
-        </p>
+        </div>
 
         <button
             class="btn"
@@ -664,9 +668,9 @@ if(cacheId === "dobdob"){
             D: 2 | T: 1
         </p>
 
-        <p>
+        <div class="cache-description">
             Táto keška sa nachádza na lodžii.
-        </p>
+        </div>
 
         <button
             class="btn"
@@ -717,10 +721,10 @@ if(cacheId === "vyhladova"){
             D: 1.5 | T: 1
         </p>
 
-        <p>
+        <div class="cache-description">
             Niekedy netreba hľadať pod nohami.
             Stačí sa rozhliadnuť okolo seba.
-        </p>
+        </div>
 
         <button
             class="btn"
