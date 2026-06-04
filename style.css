@@ -252,3 +252,52 @@ select{
         0 10px 25px rgba(0,0,0,.45);
 
 }
+.main-title{
+
+    margin-bottom:6px;
+
+    font-size:42px;
+
+    font-weight:800;
+
+}
+
+.subtitle{
+
+    color:#2ecc71;
+
+    font-size:22px;
+
+    margin-bottom:20px;
+
+}
+
+.stats-card{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    gap:12px;
+
+    background:#0f1813;
+
+    border-radius:20px;
+
+    padding:16px;
+
+    margin-bottom:18px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+}
+
+.stat-box{
+
+    flex:1;
+
+    text-align:center;
+
+    font-size:18px;
+
+}
