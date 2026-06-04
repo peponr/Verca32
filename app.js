@@ -696,6 +696,60 @@ if(cacheId === "dobdob"){
 
     `;
 }
+if(cacheId === "vyhladova"){
+
+    cacheContent.innerHTML = `
+        <button
+            class="btn"
+            onclick="showScreen('lodzia')">
+            ← Späť
+        </button>
+
+        <h2>
+            Výhľadová
+        </h2>
+
+        <p>
+            Typ: Tradičná
+        </p>
+
+        <p>
+            D: 1.5 | T: 1
+        </p>
+
+        <p>
+            Niekedy netreba hľadať pod nohami.
+            Stačí sa rozhliadnuť okolo seba.
+        </p>
+
+        <button
+            class="btn"
+            onclick="toggleHint('hint-vyhladova')">
+            Nápoveda
+        </button>
+
+        <div
+            id="hint-vyhladova"
+            class="hint">
+            sem doplníme hint
+        </div>
+
+        <br><br>
+
+        ${
+          foundCaches.vyhladova
+          ?
+          `<p>😊 Keška už bola nájdená.</p>`
+          :
+          `<button
+              class="btn"
+              onclick="logCache('vyhladova')">
+              Zalogovať nález
+           </button>`
+        }
+
+    `;
+}
   showScreen("cache");
 }
 function toggleHint(id){
@@ -866,6 +920,19 @@ if(dobdobPin){
         : "📍";
 
 }
+  const vyhladovaPin =
+document.getElementById(
+    "pin-vyhladova"
+);
+
+if(vyhladovaPin){
+
+    vyhladovaPin.innerHTML =
+    foundCaches.vyhladova
+        ? "😊"
+        : "📍";
+
+}
 let count = 0;
 
 if(foundCaches.smilstvo) count++;
@@ -880,7 +947,8 @@ if(foundCaches.obzerstvo) count++;
 if(foundCaches.epipremnum) count++;
 if(foundCaches.zima) count++;
 if(foundCaches.dobdob) count++;
-
+if(foundCaches.vyhladova) count++;
+  
 const livingRoomCard =
 document.getElementById(
 "living-room-card"
@@ -1167,12 +1235,14 @@ if(
     balconyIcons.innerHTML =
 
         (foundCaches.dobdob
-            ? "😊 "
-            : "📍 ")
+    ? "😊 "
+    : "📍 ")
 
-        +
++
 
-        "📍";
+(foundCaches.vyhladova
+    ? "😊 "
+    : "📍");
 
 }
     if(balconyButton){
