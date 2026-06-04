@@ -663,9 +663,6 @@ if(livingRoomButton){
         </button>
     `;
 
-}
-}
-
 
 }
 const progress =
@@ -732,7 +729,6 @@ if(livingIcons){
 
     }
 
-}
 }
 const kitchenCard =
 document.getElementById(
@@ -815,7 +811,7 @@ if(
     }
 
 }
-
+}
 function checkPig(){
 
     const answer =
