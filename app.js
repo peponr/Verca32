@@ -44,7 +44,9 @@ function openCache(cacheId){
             </p>
 
            <div class="cache-description">
-                Sedem hlavných hriechov tvorí tradičný zoznam nerestí...
+                Sedem hlavných (alebo smrteľných) hriechov tvorí tradičný zoznam nerestí v kresťanskej náuke, ktorý definoval pápež Gregor I. v 6. storočí. Tieto hriechy sú považované za korene všetkých ostatných morálnych zlyhaní.
+<br>
+Smilstvo (Luxuria): Prehnané telesné žiadostivosti a nezodpovedné sexuálne správanie.
             </div>
 
             <button
@@ -56,7 +58,7 @@ function openCache(cacheId){
             <div
                 id="hint-smilstvo"
                 class="hint">
-                vnútri
+                Vnútri
             </div>
 
             <br><br>
@@ -97,8 +99,9 @@ if(cacheId === "yucca"){
         </p>
 
         <div class="cache-description">
-            Yucca je rod trvalých rastlín z čeľade
-            Asparagaceae...
+         Yucca je rod trvalých rastlín z čeľade Asparagaceae, ktorý zahŕňa približne 40-50 druhov. Pochádza z teplých a suchých oblastí Severnej a Strednej Ameriky. Yucca je známa pre svoje dlhé, ostré a tuhými listy, ktoré vyrastajú v rozete. Niektoré druhy Yuccy majú drevnatý kmeň, ktorý s pribúdajúcim vekom rastliny rastie a dáva jej vzhľad malého stromu. Yucca je veľmi odolná rastlina, ktorá sa dokáže prispôsobiť rôznym podmienkam, čo ju robí populárnou izbovou rastlinou aj záhradnou rastlinou.
+<br>
+Yucca je krásna a mimoriadne odolná rastlina, ktorá dokáže pridať exotický nádych do akéhokoľvek interiéru alebo záhrady. So správnou starostlivosťou bude táto rastlina prosperovať a tešiť vás svojím jedinečným vzhľadom po mnoho rokov.
         </div>
 
         <button
@@ -110,7 +113,7 @@ if(cacheId === "yucca"){
         <div
             id="hint-yucca"
             class="hint">
-            pod zemou
+            Pod zemou
         </div>
         <br><br>
 
@@ -150,7 +153,25 @@ cacheContent.innerHTML = `
     </p>
     
     <div class="cache-description">
-    smerdzi mi cikulka
+    Tomáš si šetril peniaze v prasiatku.
+<br>
+Na začiatku mal neznámu sumu peňazí.
+<br>
+Na Mikuláša dostal 20 €, potom si kúpil knihu za 12 €.
+<br>
+O týždeň neskôr si do prasiatka pridal ešte 15 € z brigády.
+<br>
+Následne minul 18 € na darček pre kamaráta.
+<br>
+Keď prasiatko otvoril, našiel v ňom 65 €.
+<br>
+Koľko eur mal Tomáš na začiatku?
+<br>
+<br>
+<br>
+<br>
+<br>
+… a možno by po zalogovaní nebol zlý nápad sa do prasiatka aj pozrieť 😊
     </div>
     
     <input
@@ -197,37 +218,9 @@ if(cacheId === "lenivost"){
         </p>
 
         <div class="cache-description">
-            Lenivosť (Acedia):
-            Neochota konať dobro,
-            pracovať alebo plniť svoje povinnosti.
-            Lorem ipsum
-
-            Dolor sit amet
-            Blabla
-            AKOKOKOKO
-            Dlhyyyyyyyyyyyyy
-            text
-            skuska s
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            Lenivosť (Acedia):
-            Neochota konať dobro,
-            pracovať alebo plniť svoje povinnosti.
-            Lorem ipsum
-
-            Dolor sit amet
-            Blabla
-            AKOKOKOKO
-            Dlhyyyyyyyyyyyyy
-            text
-            skuska s
+           Sedem hlavných (alebo smrteľných) hriechov tvorí tradičný zoznam nerestí v kresťanskej náuke, ktorý definoval pápež Gregor I. v 6. storočí. Tieto hriechy sú považované za korene všetkých ostatných morálnych zlyhaní.
+<br>
+Lenivosť (lat. acedia): Duchovná otupenosť, ľahostajnosť a odpor k duchovnému úsiliu.
         </div>
 
         <button
@@ -239,7 +232,7 @@ if(cacheId === "lenivost"){
         <div
             id="hint-lenivost"
             class="hint">
-            sem doplníme tvoj hint
+            Šmátraj
         </div>
 
         <br><br>
@@ -280,15 +273,16 @@ if(cacheId === "london"){
         </p>
 
         <div class="cache-description">
-            Táto multina ťa zoberie na krátku cestu okolo sveta.
-            A bytu.
+         Táto multina ťa zoberie na krátku cestu okolo sveta. A bytu. 
+         <br>
+         Na štyroch stagoch nájdeš 4 číslice, ktoré ti pomôžu nájsť riešenie úlohy.
+         <br>
 
-            Na štyroch stagoch nájdeš 4 číslice,
-            ktoré ti pomôžu nájsť riešenie úlohy.
-
-            K finálu:
-            Som miestnosť v tvojom byte,
-            ale vkročiť do mňa nemôžeš.
+X = *TBD - tu bude komplikovaný výpočet s premennými A,B,C,D - tak aby dával troj, alebo štvorciferný výsledok - podľa toho, aký zámok zoženiem v obchode. Doplníme.
+<br>
+K finálu: som miestnosť v tvojom byte, ale vkročiť do mňa nemôžeš.
+<br>
+Upozornenie: na fináli opatrne, aby sme o kešku neprišli !!!
         </div>
 
         <button
@@ -300,7 +294,7 @@ if(cacheId === "london"){
         <div
             id="hint-london"
             class="hint">
-            magnet
+            Magnet
         </div>
 
         <br><br>
@@ -341,9 +335,11 @@ if(cacheId === "strelitzia"){
         </p>
 
         <div class="cache-description">
-            Strelitzia Nicolai, známa aj ako biela strelícia,
-            patrí medzi najimpozantnejšie izbové rastliny.
-            Je obľúbená vďaka svojim veľkým listom a exotickému vzhľadu.
+            Strelitzia Nicolai, známa tiež ako „biela strelícia“, patrí medzi najimpozantnejšie izbové rastliny. Je obľúbená vďaka svojim veľkým listom a exotickému vzhľadu, ktorý každému interiéru dodáva nádych tropického raja.
+<br>
+Strelitzia Nicolai pochádza z južnej Afriky a vo voľnej prírode dorastá až do výšky 10 metrov. V interiéri je jej rast o niečo obmedzenejší, ale pri optimálnych podmienkach môže dosiahnuť výšku okolo 2 až 3 metrov. Táto rastlina sa pýši veľkými, banánovníkom podobnými listami, ktoré sa často trhajú kvôli svojej veľkosti a štruktúre. Aj keď to môže pôsobiť ako poškodenie, je to prirodzený proces, ktorý umožňuje listom lepšie sa prispôsobiť prúdeniu vzduchu v prírode.
+<br>
+Strelitzia Nicolai je skutočným klenotom medzi izbovými rastlinami, ktorý sa postará o unikátnu atmosféru vašej domácnosti. Hoci si vyžaduje starostlivosť, pri dodržaní základných pravidiel sa vám odvďačí krásnym rastom a výnimočnou estetikou. S trochou trpezlivosti a správnymi podmienkami sa môže stať stálicou vo vašej zelenej zbierke.
         </div>
 
         <button
@@ -355,7 +351,7 @@ if(cacheId === "strelitzia"){
         <div
             id="hint-strelitzia"
             class="hint">
-            visí
+            Visí
         </div>
 
         <br><br>
@@ -462,8 +458,22 @@ if(cacheId === "pizza"){
         </p>
 
         <div class="cache-description">
-            Pizza patrí medzi najobľúbenejšie jedlá
-            na svete.
+       Rímska? Neapolská? New York style? Chicago deep dish?
+       <br>
+ To je jedno, každá je skvelá !
+<br>
+Pizza prešla dlhú cestu od antických chlebov chudobných v Stredomorí po celosvetový fenomén. Moderná pizza s paradajkami a syrom sa zrodila v 18. storočí v Neapole. Dnes patrí medzi najobľúbenejšie jedlá sveta s nespočetnými lokálnymi obmenami.
+<br>
+Od antiky po Neapol
+Predchodcovia pizze s rôznymi polevami sa piekli už v starom Egypte, Grécku a Ríme. Boli to lacné a sýte placky, ktoré slúžili aj ako jedlý tanier. Samotné slovo „pizza“ bolo prvýkrát písomne zaznamenané už v roku 997 v meste Gaeta.
+Skutočná revolúcia nastala v 16. storočí v Neapole. Po dovoze paradajok z Ameriky ich začali chudobní obyvatelia (známi ako lazzaroni) pridávať na svoje cestové placky. Tak vzniklo jedlo, ktoré bolo lacné, rýchle a prenosné. V roku 1830 bola v Neapole otvorená prvá moderná pizzeria na svete – Port'Alba.
+<br>
+Zrod pizze Margherita
+Prelom v histórii nastal v roku 1889, keď Neapol navštívili taliansky kráľ Umberto I. s manželkou Margaritou Savojskou. Miestny majster pizze Raffaele Esposito im na privítanie pripravil tri rôzne pizze. Kráľovnú najviac očarila verzia s paradajkami, mozzarellou a bazalkou, ktoré symbolizovali farby talianskej vlajky (červená, biela, zelená). Na jej počesť dostala táto dodnes najznámejšia pizza názov Margherita.
+<br>
+Cesta do sveta
+Do Spojených štátov amerických priniesli pizzu talianski imigranti na konci 19. a začiatkom 20. storočia. Prvá americká pizzeria bola otvorená v New Yorku v roku 1905. Celosvetový boom však zažila až po druhej svetovej vojne. Dnes sa pôvodná talianska receptúra teší takej ochrane, že spôsob prípravy tradičnej neapolskej pizze je dokonca zapísaný v zozname nehmotného kultúrneho dedičstva UNESCO.
+
         </div>
 
         <button
@@ -475,7 +485,7 @@ if(cacheId === "pizza"){
         <div
             id="hint-pizza"
             class="hint">
-            mrazená
+            Urob si pizzu
         </div>
 
         <br><br>
@@ -516,8 +526,10 @@ if(cacheId === "obzerstvo"){
         </p>
 
         <div class="cache-description">
-            Obžerstvo predstavuje
-            nadmerné užívanie jedla a nápojov.
+        Sedem hlavných (alebo smrteľných) hriechov tvorí tradičný zoznam nerestí v kresťanskej náuke, ktorý definoval pápež Gregor I. v 6. storočí. Tieto hriechy sú považované za korene všetkých ostatných morálnych zlyhaní.
+<br>
+Obžerstvo (lat. gula): Prehnané a sebecké prejedanie sa či nestriedmosť v pití.
+
         </div>
 
         <button
@@ -529,7 +541,7 @@ if(cacheId === "obzerstvo"){
         <div
             id="hint-obzerstvo"
             class="hint">
-            sem doplníme hint
+           Od rána mám chuť...
         </div>
 
         <br><br>
@@ -570,9 +582,19 @@ if(cacheId === "epipremnum"){
         </p>
 
         <div class="cache-description">
-            Epipremnum patrí medzi najobľúbenejšie
-            izbové rastliny. Pre vyriešenie tejto
-            mystery budeš musieť preskúmať jej okolie.
+           Epipremnum či Pothos, ľudovo zvaný aj Divý Janko, je obľúbená ťahavá rastlinka, ktorá už dlhé roky zdobí mnohé poličky a skrine v domácnostiach aj kanceláriách. Obľúbenou sa stala najmä kvôli nízkym nárokom na svetlo a zalievanie. Výskum NASA ju dokonca zaradil medzi rastliny s najlepšou schopnosťou čistiť zo vzduchu toxíny. Rastie relatívne rýchlo a teda je vhodná napríklad pre pestovateľov začiatočníkov, ktorí chcú postupne zazelenať svoj byt. 
+<br>
+Epipremnum je ťahavá alebo plazivá rastlina. Patrí do čeľade áronovité, po latinsky Araceae. V prírode sa pomocou vzdušných koreňov zachytáva na vyššie stromy a šplhá sa po nich smerom nahor.
+V domácich podmienkach sa môžete rozhodnúť ci ho umiestnite na poličku a necháte spustený visieť smerom nadol, alebo mu môžete do kvetináča umiestniť podpornú tyč, po ktorej sa môže ťahať smerom nahor.
+<br>
+Listy majú zväčša tvar natiahnutého srdca. Najčastejšie sú zelenej farby v kombinácii so žltými či bielymi fľakmi. Najrozšírenejším druhom je takzvaný Golden Pothos, latinsky Epipremnum aureum, ktorý má zelené listy so žltými fľakmi. Prvý raz bol pomenovaný koncom 18. storočia a doteraz je najrozšírenejším druhom ťahavej izbovej rastliny vďaka ľahkému množeniu.
+<br>
+Ďalšími obľúbenými druhmi sú Pothos Marble Queen, ktorý mu je podobný, avšak jeho fľaky nie sú žlté, ale biele, Neon pothos s výraznými listami, Pothos variegata / Pothos N´Joy s menšími bielo-zelenými listami, Pothos Happy Leaf, ktorý má na bielych listoch nepravidelné zelené škvrny rôznej sýtosti.
+<br>
+Pothosy sa môžu dorastať až do dĺžky 20 metrov. V domácich podmienkach mávajú väčšinou okolo jedného či dvoch metrov. Ak sú dlhšie tak ich potom ľudia nastrihajú, zakorenia a zasadia opäť do kvetináča aby zahustili rastlinku. Listy sa môžu dorásť do veľkosti 100 na 45 centimetrov. Bežne v domácnosti však mávajú len veľkosť do 20 centimetrov.
+<br>
+Ku keške: vynásob počet stoniek prevísajúcich od vrchu kuchynskej linky počtom listov pod úrovňou podpornej tyče.
+
         </div>
 
         <button
@@ -584,7 +606,7 @@ if(cacheId === "epipremnum"){
         <div
             id="hint-epipremnum"
             class="hint">
-            zelená
+            -
         </div>
 
         <br><br>
@@ -630,12 +652,13 @@ if(cacheId === "zima"){
         </p>
 
         <p>
-            D: 3 | T: 1.5
+            D: 4 | T: 1.5
         </p>
 
         <div class="cache-description">
-            Nájdi správne riešenie
-            a získaj finálny kód.
+            V našom byte sa nachádza viacero elektrospotrebičov ktorých primárnym účelom je hriať, alebo chladiť. Zrátaj “chladiče” a “hrejiče”, vynásob ich počet a dopracuješ sa k riešeniu.
+<br>
+Poznámka: hľadaj iba v kuchyni, obývačke a kúpeľni.
         </div>
 
         <button
@@ -647,7 +670,7 @@ if(cacheId === "zima"){
         <div
             id="hint-zima"
             class="hint">
-            chladnička
+            -
         </div>
 
         <br><br>
@@ -697,7 +720,7 @@ if(cacheId === "dobdob"){
         </p>
 
         <div class="cache-description">
-            Táto keška sa nachádza na lodžii.
+            Však ty vieš...
         </div>
 
         <button
@@ -709,7 +732,7 @@ if(cacheId === "dobdob"){
         <div
             id="hint-dobdob"
             class="hint">
-            sem doplníme hint
+            -
         </div>
 
         <br><br>
@@ -750,14 +773,15 @@ if(cacheId === "vyhladova"){
         </p>
 
         <div class="cache-description">
-            Niekedy netreba hľadať pod nohami.
-            Stačí sa rozhliadnuť okolo seba.
+           Pokochaj sa výhľadom, nadýchaj sa čerstvého vzduchu, užívaj si prítomný moment.
+           <br>
+           A možno pri tom objavíš aj kešku.
         </div>
 
         <button
             class="btn"
             onclick="toggleHint('hint-vyhladova')">
-            Nápoveda
+            Hedera Helix
         </button>
 
         <div
