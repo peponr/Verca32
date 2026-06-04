@@ -244,3 +244,11 @@ select{
     margin:12px 0;
 
 }
+.card.unlocked{
+
+    box-shadow:
+        0 0 12px rgba(46,204,113,.45),
+        0 0 30px rgba(46,204,113,.25),
+        0 10px 25px rgba(0,0,0,.45);
+
+}
