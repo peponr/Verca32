@@ -462,6 +462,60 @@ if(cacheId === "pizza"){
 
     `;
 }
+if(cacheId === "obzerstvo"){
+
+    cacheContent.innerHTML = `
+        <button
+            class="btn"
+            onclick="showScreen('kuchyna')">
+            ← Späť
+        </button>
+
+        <h2>
+            7 smrteľných hriechov - obžerstvo
+        </h2>
+
+        <p>
+            Typ: Tradičná
+        </p>
+
+        <p>
+            D: 2 | T: 1
+        </p>
+
+        <p>
+            Obžerstvo predstavuje
+            nadmerné užívanie jedla a nápojov.
+        </p>
+
+        <button
+            class="btn"
+            onclick="toggleHint('hint-obzerstvo')">
+            Nápoveda
+        </button>
+
+        <div
+            id="hint-obzerstvo"
+            class="hint">
+            sem doplníme hint
+        </div>
+
+        <br><br>
+
+        ${
+          foundCaches.obzerstvo
+          ?
+          `<p>😊 Keška už bola nájdená.</p>`
+          :
+          `<button
+              class="btn"
+              onclick="logCache('obzerstvo')">
+              Zalogovať nález
+           </button>`
+        }
+
+    `;
+}
   showScreen("cache");
 }
 function toggleHint(id){
@@ -584,7 +638,17 @@ document.getElementById("pin-pizza");
         : "📍";
 
 }
+const obzerstvoPin =
+document.getElementById("pin-obzerstvo");
 
+if(obzerstvoPin){
+
+    obzerstvoPin.innerHTML =
+    foundCaches.obzerstvo
+        ? "😊"
+        : "📍";
+
+}
 let count = 0;
 
 if(foundCaches.smilstvo) count++;
@@ -595,6 +659,7 @@ if(foundCaches.london) count++;
 if(foundCaches.strelitzia) count++;
 if(foundCaches.knihomol) count++;
 if(foundCaches.pizza) count++;
+if(foundCaches.obzerstvo) count++;
   
 const livingRoomCard =
 document.getElementById(
@@ -786,21 +851,23 @@ if(
 
     kitchenIcons.innerHTML =
 
-        (foundCaches.pizza
-            ? "😊 "
-            : "📍 ")
+       (foundCaches.pizza
+    ? "😊 "
+    : "📍 ")
 
-        +
++
 
-        "📍 "
+(foundCaches.obzerstvo
+    ? "😊 "
+    : "📍 ")
 
-        +
++
 
-        "❓ "
+"❓ "
 
-        +
++
 
-        "❓";
+"❓";
 
 }
 
