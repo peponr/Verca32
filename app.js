@@ -1051,6 +1051,10 @@ if(livingRoomCard){
         .classList
         .remove("locked");
 
+    livingRoomCard
+        .classList
+        .add("unlocked");
+
 }
 
 if(livingRoomText){
@@ -1180,6 +1184,7 @@ if(
             .classList
             .remove("locked");
 
+        kitchenCard.classList.add("unlocked");
     }
 
     if(kitchenTitle){
@@ -1274,6 +1279,8 @@ if(
         balconyCard
             .classList
             .remove("locked");
+
+      balconyCard.classList.add("unlocked");
 
     }
 
