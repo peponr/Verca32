@@ -301,3 +301,47 @@ select{
     font-size:18px;
 
 }
+.swipe-hint{
+
+    text-align:center;
+
+    margin-top:10px;
+
+    margin-bottom:25px;
+
+    color:#888;
+
+    font-size:14px;
+
+}
+
+.dots{
+
+    margin-top:12px;
+
+}
+
+.dot{
+
+    display:inline-block;
+
+    width:10px;
+
+    height:10px;
+
+    border-radius:50%;
+
+    background:#444;
+
+    margin:0 6px;
+
+}
+
+.active-dot{
+
+    background:#2ecc71;
+
+    box-shadow:
+        0 0 10px rgba(46,204,113,.8);
+
+}
