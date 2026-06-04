@@ -876,8 +876,8 @@ if(smilstvoPin){
 
     smilstvoPin.innerHTML =
     foundCaches.smilstvo
-        ? '<img src="found.png">'
-        : '<img src="traditional.png">';
+        ? '<img class="pin-found" src="found.png">'
+        : '<img class="pin-traditional" src="traditional.png">';
 }
 const yuccaPin =
 document.getElementById("pin-yucca");
@@ -886,8 +886,8 @@ if(yuccaPin){
 
     yuccaPin.innerHTML =
     foundCaches.yucca
-        ? '<img src="found.png">'
-        : '<img src="traditional.png">';
+        ? '<img class="pin-found" src="found.png">'
+        : '<img class="pin-traditional" src="traditional.png">';
 
 }
 const pigPin =
@@ -897,8 +897,8 @@ if(pigPin){
 
     pigPin.innerHTML =
     foundCaches.pig
-        ? '<img src="found.png">'
-        : '<img src="mystery.png">';
+        ? '<img class="pin-found" src="found.png">'
+        : '<img class="pin-mystery" src="mystery.png">';
 
 }
 const lenivostPin =
@@ -908,8 +908,8 @@ if(lenivostPin){
 
     lenivostPin.innerHTML =
     foundCaches.lenivost
-        ? '<img src="found.png">'
-        : '<img src="traditional.png">';
+        ? '<img class="pin-found" src="found.png">'
+        : '<img class="pin-traditional" src="traditional.png">';
 
 }
 const londonPin =
@@ -919,8 +919,8 @@ if(londonPin){
 
     londonPin.innerHTML =
     foundCaches.london
-        ? '<img src="found.png">'
-        : '<img src="multi.png">';
+        ? '<img class="pin-found" src="found.png">'
+        : '<img class="pin-multi" src="multi.png">';
 
 }
 const strelitziaPin =
@@ -930,8 +930,8 @@ if(strelitziaPin){
 
     strelitziaPin.innerHTML =
     foundCaches.strelitzia
-        ? '<img src="found.png">'
-        : '<img src="traditional.png">';
+        ? '<img class="pin-found" src="found.png">'
+        : '<img class="pin-traditional" src="traditional.png">';
 
 }
 const knihomolPin =
@@ -941,8 +941,8 @@ if(knihomolPin){
 
     knihomolPin.innerHTML =
     foundCaches.knihomol
-       ? '<img src="found.png">'
-        : '<img src="mystery.png">';
+       ? '<img class="pin-found" src="found.png">'
+        : '<img class="pin-mystery" src="mystery.png">';
 
 }
 
@@ -953,8 +953,8 @@ document.getElementById("pin-pizza");
 
     pizzaPin.innerHTML =
     foundCaches.pizza
-        ? '<img src="found.png">'
-        : '<img src="traditional.png">';
+        ? '<img class="pin-found" src="found.png">'
+        : '<img class="pin-traditional" src="traditional.png">';
 
 }
 const obzerstvoPin =
@@ -964,8 +964,8 @@ if(obzerstvoPin){
 
     obzerstvoPin.innerHTML =
     foundCaches.obzerstvo
-        ? '<img src="found.png">'
-        : '<img src="traditional.png">';
+        ? '<img class="pin-found" src="found.png">'
+        : '<img class="pin-traditional" src="traditional.png">';
 
 }
 const epipremnumPin =
@@ -977,8 +977,8 @@ if(epipremnumPin){
 
     epipremnumPin.innerHTML =
     foundCaches.epipremnum
-        ? '<img src="found.png">'
-        : '<img src="mystery.png">';
+        ? '<img class="pin-found" src="found.png">'
+        : '<img class="pin-mystery" src="mystery.png">';
   
 }
 const zimaPin =
@@ -990,8 +990,8 @@ if(zimaPin){
 
     zimaPin.innerHTML =
     foundCaches.zima
-      ? '<img src="found.png">'
-        : '<img src="mystery.png">';
+      ? '<img class="pin-found" src="found.png">'
+        : '<img class="pin-mystery" src="mystery.png">';
 
 }
 const dobdobPin =
@@ -1001,8 +1001,8 @@ if(dobdobPin){
 
     dobdobPin.innerHTML =
     foundCaches.dobdob
-        ? '<img src="found.png">'
-        : '<img src="traditional.png">';
+        ? '<img class="pin-found" src="found.png">'
+        : '<img class="pin-traditional" src="traditional.png">';
 
 }
   const vyhladovaPin =
@@ -1014,8 +1014,8 @@ if(vyhladovaPin){
 
     vyhladovaPin.innerHTML =
     foundCaches.vyhladova
-        ? '<img src="found.png">'
-        : '<img src="traditional.png">';
+        ? '<img class="pin-found" src="found.png">'
+        : '<img class="pin-traditional" src="traditional.png">';
 
 }
 let count = 0;
