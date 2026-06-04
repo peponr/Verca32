@@ -580,6 +580,69 @@ if(cacheId === "epipremnum"){
 
     `;
 }  
+if(cacheId === "zima"){
+
+    cacheContent.innerHTML = `
+        <button
+            class="btn"
+            onclick="showScreen('kuchyna')">
+            ← Späť
+        </button>
+
+        <h2>
+            Zima, teplo, teplejšie, horí!
+        </h2>
+
+        <p>
+            Typ: Mystery
+        </p>
+
+        <p>
+            D: 3 | T: 1.5
+        </p>
+
+        <p>
+            Nájdi správne riešenie
+            a získaj finálny kód.
+        </p>
+
+        <button
+            class="btn"
+            onclick="toggleHint('hint-zima')">
+            Nápoveda
+        </button>
+
+        <div
+            id="hint-zima"
+            class="hint">
+            chladnička
+        </div>
+
+        <br><br>
+
+        ${
+          foundCaches.zima
+          ?
+          `<p>😊 Keška už bola nájdená.</p>`
+          :
+          `
+            <input
+                id="zima-answer"
+                type="number"
+                placeholder="Výsledný kód">
+
+            <br><br>
+
+            <button
+                class="btn"
+                onclick="checkZima()">
+                Overiť odpoveď
+            </button>
+          `
+        }
+
+    `;
+}
   showScreen("cache");
 }
 function toggleHint(id){
@@ -726,6 +789,19 @@ if(epipremnumPin){
         : "❓";
 
 }
+const zimaPin =
+document.getElementById(
+    "pin-zima"
+);
+
+if(zimaPin){
+
+    zimaPin.innerHTML =
+    foundCaches.zima
+        ? "😊"
+        : "❓";
+
+}
 let count = 0;
 
 if(foundCaches.smilstvo) count++;
@@ -738,6 +814,7 @@ if(foundCaches.knihomol) count++;
 if(foundCaches.pizza) count++;
 if(foundCaches.obzerstvo) count++;
 if(foundCaches.epipremnum) count++;
+if(foundCaches.zima) count++;
   
 const livingRoomCard =
 document.getElementById(
@@ -947,7 +1024,9 @@ if(
 
 +
 
-"❓";
+(foundCaches.zima
+    ? "😊 "
+    : "❓");
 
 }
 
@@ -1017,6 +1096,28 @@ function checkEpipremnum(){
 
         logCache(
             "epipremnum"
+        );
+
+    }else{
+
+        alert(
+            "❌ Nesprávny kód"
+        );
+
+    }
+
+}
+function checkZima(){
+
+    const answer =
+        document.getElementById(
+            "zima-answer"
+        ).value;
+
+    if(answer == "1234"){
+
+        logCache(
+            "zima"
         );
 
     }else{
