@@ -775,11 +775,40 @@ localStorage.setItem(
 
 updateProgress();
 
+updateProgress();
+
 alert(
     "😊 Keška bola úspešne zalogovaná."
 );
 
-showScreen("home");
+if(
+
+    foundCaches.smilstvo &&
+    foundCaches.yucca &&
+    foundCaches.pig &&
+
+    foundCaches.lenivost &&
+    foundCaches.london &&
+    foundCaches.strelitzia &&
+    foundCaches.knihomol &&
+
+    foundCaches.pizza &&
+    foundCaches.obzerstvo &&
+    foundCaches.epipremnum &&
+    foundCaches.zima &&
+
+    foundCaches.dobdob &&
+    foundCaches.vyhladova
+
+){
+
+    showScreen("bonus");
+
+}else{
+
+    showScreen("home");
+
+}
 
 }
 function updateProgress(){
