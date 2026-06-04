@@ -180,3 +180,19 @@ textarea,
 select{
     font-size:16px;
 }
+
+.cache-description{
+
+    max-height:200px;
+
+    overflow-y:auto;
+
+    padding:10px;
+
+    margin:15px 0;
+
+    border:1px solid #333;
+
+    border-radius:10px;
+
+}
