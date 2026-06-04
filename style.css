@@ -217,7 +217,7 @@ select{
     border-radius:10px;
 
 }
-.pin-traditional img{
+img.pin-traditional{
 
   filter:
     drop-shadow(
@@ -226,7 +226,7 @@ select{
 
 }
 
-.pin-mystery img{
+img.pin-mystery{
 
   filter:
     drop-shadow(
@@ -235,7 +235,7 @@ select{
 
 }
 
-.pin-multi img{
+img.pin-multi{
 
   filter:
     drop-shadow(
@@ -244,7 +244,7 @@ select{
 
 }
 
-.pin-found img{
+img.pin-found{
 
   filter:
     drop-shadow(
