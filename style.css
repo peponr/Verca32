@@ -109,7 +109,7 @@ body{
 
   filter:
     drop-shadow(
-      0 0 8px rgba(255,255,255,.25)
+      0 0 6px rgba(255,255,255,.15)
     );
 
 }
@@ -215,5 +215,40 @@ select{
     border:1px solid #333;
 
     border-radius:10px;
+
+}
+.pin-traditional img{
+
+  filter:
+    drop-shadow(
+      0 0 10px rgba(57,231,95,.75)
+    );
+
+}
+
+.pin-mystery img{
+
+  filter:
+    drop-shadow(
+      0 0 10px rgba(184,77,255,.75)
+    );
+
+}
+
+.pin-multi img{
+
+  filter:
+    drop-shadow(
+      0 0 10px rgba(255,140,0,.75)
+    );
+
+}
+
+.pin-found img{
+
+  filter:
+    drop-shadow(
+      0 0 10px rgba(255,212,0,.85)
+    );
 
 }
