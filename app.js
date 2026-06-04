@@ -516,6 +516,70 @@ if(cacheId === "obzerstvo"){
 
     `;
 }
+if(cacheId === "epipremnum"){
+
+    cacheContent.innerHTML = `
+        <button
+            class="btn"
+            onclick="showScreen('kuchyna')">
+            ← Späť
+        </button>
+
+        <h2>
+            Botanicals #03 - Epipremnum
+        </h2>
+
+        <p>
+            Typ: Mystery
+        </p>
+
+        <p>
+            D: 3 | T: 1.5
+        </p>
+
+        <p>
+            Epipremnum patrí medzi najobľúbenejšie
+            izbové rastliny. Pre vyriešenie tejto
+            mystery budeš musieť preskúmať jej okolie.
+        </p>
+
+        <button
+            class="btn"
+            onclick="toggleHint('hint-epipremnum')">
+            Nápoveda
+        </button>
+
+        <div
+            id="hint-epipremnum"
+            class="hint">
+            zelená
+        </div>
+
+        <br><br>
+
+        ${
+          foundCaches.epipremnum
+          ?
+          `<p>😊 Keška už bola nájdená.</p>`
+          :
+          `
+            <input
+                id="epipremnum-answer"
+                type="number"
+                placeholder="Výsledný kód">
+
+            <br><br>
+
+            <button
+                class="btn"
+                onclick="checkEpipremnum()">
+                Overiť odpoveď
+            </button>
+          `
+        }
+
+    `;
+}  
   showScreen("cache");
 }
 function toggleHint(id){
@@ -649,6 +713,19 @@ if(obzerstvoPin){
         : "📍";
 
 }
+const epipremnumPin =
+document.getElementById(
+    "pin-epipremnum"
+);
+
+if(epipremnumPin){
+
+    epipremnumPin.innerHTML =
+    foundCaches.epipremnum
+        ? "😊"
+        : "❓";
+
+}
 let count = 0;
 
 if(foundCaches.smilstvo) count++;
@@ -660,6 +737,7 @@ if(foundCaches.strelitzia) count++;
 if(foundCaches.knihomol) count++;
 if(foundCaches.pizza) count++;
 if(foundCaches.obzerstvo) count++;
+if(foundCaches.epipremnum) count++;
   
 const livingRoomCard =
 document.getElementById(
@@ -915,6 +993,28 @@ function checkKnihomol(){
 
         logCache(
             "knihomol"
+        );
+
+    }else{
+
+        alert(
+            "❌ Nesprávny kód"
+        );
+
+    }
+
+}
+function checkEpipremnum(){
+
+    const answer =
+        document.getElementById(
+            "epipremnum-answer"
+        ).value;
+
+    if(answer == "1234"){
+
+        logCache(
+            "epipremnum"
         );
 
     }else{
