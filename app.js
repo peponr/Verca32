@@ -941,7 +941,9 @@ if(
 
 +
 
-"❓ "
+(foundCaches.epipremnum
+    ? "😊 "
+    : "❓ ")
 
 +
 
