@@ -784,10 +784,25 @@ if(
 
     if(kitchenIcons){
 
-        kitchenIcons.innerHTML =
-            "📍 📍 ❓ ❓";
+    kitchenIcons.innerHTML =
 
-    }
+        (foundCaches.pizza
+            ? "😊 "
+            : "📍 ")
+
+        +
+
+        "📍 "
+
+        +
+
+        "❓ "
+
+        +
+
+        "❓";
+
+}
 
     if(kitchenButton){
 
