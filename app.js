@@ -1043,6 +1043,80 @@ if(
     }
 
 }
+const balconyCard =
+document.getElementById(
+    "balcony-card"
+);
+
+const balconyTitle =
+document.getElementById(
+    "balcony-title"
+);
+
+const balconyText =
+document.getElementById(
+    "balcony-text"
+);
+
+const balconyButton =
+document.getElementById(
+    "balcony-button"
+);
+
+const balconyIcons =
+document.getElementById(
+    "balcony-icons"
+);
+
+if(
+    foundCaches.pizza &&
+    foundCaches.obzerstvo &&
+    foundCaches.epipremnum &&
+    foundCaches.zima
+){
+
+    if(balconyCard){
+
+        balconyCard
+            .classList
+            .remove("locked");
+
+    }
+
+    if(balconyTitle){
+
+        balconyTitle.innerText =
+            "🌿 Lodžia";
+
+    }
+
+    if(balconyText){
+
+        balconyText.innerText =
+            "";
+
+    }
+
+    if(balconyIcons){
+
+        balconyIcons.innerHTML =
+            "📍 ❓";
+
+    }
+
+    if(balconyButton){
+
+        balconyButton.innerHTML = `
+            <button
+                class="btn"
+                onclick="showScreen('lodzia')">
+                Vstúpiť
+            </button>
+        `;
+
+    }
+
+}
 }
 function checkPig(){
 
