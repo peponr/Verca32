@@ -208,7 +208,15 @@ if(cacheId === "lenivost"){
             Dlhyyyyyyyyyyyyy
             text
             skuska s
-
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
             Lenivosť (Acedia):
             Neochota konať dobro,
             pracovať alebo plniť svoje povinnosti.
