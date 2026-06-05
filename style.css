@@ -284,3 +284,32 @@ img.pin-found{
     letter-spacing:1px;
 
 }
+.progress-card{
+
+    margin:20px 0;
+
+    padding:16px;
+
+    background:#102015;
+
+    border:1px solid #21452e;
+
+    border-radius:18px;
+
+    text-align:center;
+
+}
+
+#progress-text{
+
+    font-size:20px;
+
+    font-weight:700;
+
+}
+
+.reset-btn{
+
+    opacity:.75;
+
+}
