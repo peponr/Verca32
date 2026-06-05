@@ -1165,7 +1165,7 @@ document.getElementById(
 if(livingRoomTitle){
 
     livingRoomTitle.innerText =
-        "🛋️ Obývačka";
+        "OBÝVAČKA";
 
 }
 
@@ -1338,7 +1338,7 @@ if(
     if(kitchenTitle){
 
         kitchenTitle.innerText =
-            "🍳 Kuchyňa";
+            "KUCHYŇA";
 
     }
 
@@ -1439,7 +1439,7 @@ if(
     if(balconyTitle){
 
         balconyTitle.innerText =
-            "🌿 Lodžia";
+            "LODŽIA";
 
     }
 
