@@ -340,3 +340,22 @@ img.pin-found{
     min-height:28px;
 
 }
+.card-icons{
+
+    display:flex;
+
+    gap:10px;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.card-icons img{
+
+    width:24px;
+
+    height:24px;
+
+}
