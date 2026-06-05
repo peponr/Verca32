@@ -307,15 +307,17 @@ img.pin-found{
 }
 .progress-card{
 
-    margin:20px 0;
+    width:50%;
 
-    padding:16px;
+    margin:20px auto;
 
-    background:#091016;
+    padding:10px 14px;
 
-    border:1px solid #21452e;
+    background:#0b1014;
 
-    border-radius:18px;
+    border:1px solid #36454f;
+
+    border-radius:14px;
 
     text-align:center;
 
@@ -323,9 +325,9 @@ img.pin-found{
 
 #progress-text{
 
-    font-size:20px;
+    font-size:16px;
 
-    font-weight:700;
+    font-weight:600;
 
 }
 
