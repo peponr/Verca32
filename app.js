@@ -1280,7 +1280,7 @@ if(
 
 </div>
 `;
-
+}
     if(kitchenButton){
 
         kitchenButton.innerHTML = `
@@ -1384,6 +1384,7 @@ if(
 
 }
 }
+
 function checkPig(){
 
     const answer =
