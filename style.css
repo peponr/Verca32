@@ -652,4 +652,42 @@ margin-top:24px;
 
     transform:scale(.96);
 
+} 
+
+.reset-link{
+
+    position:absolute;
+
+    top:40px;
+
+    right:20px;
+
+    text-align:center;
+
+    font-size:11px;
+
+    color:#5f6b72;
+
+    cursor:pointer;
+
+    opacity:.65;
+
+    line-height:1.2;
+
+    transition:
+        opacity .2s ease,
+        transform .2s ease;
+
+}
+
+.reset-link:hover{
+
+    opacity:1;
+
+}
+
+.reset-link:active{
+
+    transform:scale(.95);
+
 }
