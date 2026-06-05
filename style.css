@@ -53,6 +53,9 @@ body{
   box-shadow:
     0 8px 25px rgba(0,0,0,.35);
 
+  transition:
+    transform .25s ease,
+    box-shadow .25s ease;
 }
 
 .card img{
@@ -75,6 +78,10 @@ body{
   border-radius:12px;
   padding:14px;
   font-size:16px;
+
+  transition:
+      transform .15s ease,
+      opacity .15s ease;
 }
 
 .locked{
@@ -112,6 +119,9 @@ body{
   height:100%;
 
   object-fit:contain;
+
+   animation:
+        pinPulse 3s ease-in-out infinite;
 
 }
 .cache-pin img{
@@ -473,5 +483,35 @@ img.pin-found{
     color:#9fffb2;
 
     font-weight:600;
+
+}
+.btn:active{
+
+    transform:scale(.97);
+
+}
+.btn:hover{
+
+    opacity:.9;
+
+}
+.card:hover{
+
+    transform:translateY(-4px);
+
+}
+@keyframes pinPulse{
+
+    0%{
+        transform:scale(1);
+    }
+
+    50%{
+        transform:scale(1.04);
+    }
+
+    100%{
+        transform:scale(1);
+    }
 
 }
