@@ -31,18 +31,23 @@ function openCache(cacheId){
                 ← Späť
             </button>
 
-            <h2>
-                7 smrteľných hriechov - smilstvo
-            </h2>
+            <div class="cache-card">
 
-            <p>
-                Typ: Tradičná
-            </p>
+<h2 class="cache-title">
+    7 Smrteľných hriechov - Smilstvo
+</h2>
 
-            <p>
-                D: 2 | T: 1
-            </p>
+<div class="cache-badges">
 
+    <div class="cache-badge badge-traditional">
+        Tradičná
+    </div>
+
+    <div class="cache-badge badge-dt">
+        D:2 | T:1
+    </div>
+
+</div>	
            <div class="cache-description">
                 Sedem hlavných (alebo smrteľných) hriechov tvorí tradičný zoznam nerestí v kresťanskej náuke, ktorý definoval pápež Gregor I. v 6. storočí. Tieto hriechy sú považované za korene všetkých ostatných morálnych zlyhaní.
 <br><br>
@@ -86,17 +91,23 @@ if(cacheId === "yucca"){
             ← Späť
         </button>
 
-        <h2>
-            Botanicals #01 - Yucca Elephantipes
-        </h2>
+        <div class="cache-card">
 
-        <p>
-            Typ: Tradičná
-        </p>
+<h2 class="cache-title">
+    Botanicals #01 - Yucca Elephantipes
+</h2>
 
-        <p>
-            D: 2 | T: 2
-        </p>
+<div class="cache-badges">
+
+    <div class="cache-badge badge-traditional">
+        Tradičná
+    </div>
+
+    <div class="cache-badge badge-dt">
+        D:1,5 | T:2
+    </div>
+
+</div>	
 
         <div class="cache-description">
          Yucca je rod trvalých rastlín z čeľade Asparagaceae, ktorý zahŕňa približne 40-50 druhov. Pochádza z teplých a suchých oblastí Severnej a Strednej Ameriky. Yucca je známa pre svoje dlhé, ostré a tuhými listy, ktoré vyrastajú v rozete. Niektoré druhy Yuccy majú drevnatý kmeň, ktorý s pribúdajúcim vekom rastliny rastie a dáva jej vzhľad malého stromu. Yucca je veľmi odolná rastlina, ktorá sa dokáže prispôsobiť rôznym podmienkam, čo ju robí populárnou izbovou rastlinou aj záhradnou rastlinou.
@@ -140,17 +151,23 @@ cacheContent.innerHTML = `
         ← Späť
     </button>
 
-    <h2>
-        Pink Pig Mystery
-    </h2>
+    <div class="cache-card">
 
-    <p>
-        Typ: Mystery
-    </p>
+<h2 class="cache-title">
+    Pink Pig Mystery
+</h2>
 
-    <p>
-        D: 2.5 | T: 2
-    </p>
+<div class="cache-badges">
+
+    <div class="cache-badge badge-mystery">
+        Mystery
+    </div>
+
+    <div class="cache-badge badge-dt">
+        D:2,5 | T:2
+    </div>
+
+</div>
     
     <div class="cache-description">
     Tomáš si šetril peniaze v prasiatku.
@@ -166,8 +183,6 @@ Následne minul 18 € na darček pre kamaráta.
 Keď prasiatko otvoril, našiel v ňom 65 €.
 <br><br>
 Koľko eur mal Tomáš na začiatku?
-<br><br>
-<br><br>
 <br><br>
 <br><br>
 <br><br>
@@ -205,17 +220,23 @@ if(cacheId === "lenivost"){
             ← Späť
         </button>
 
-        <h2>
-            7 smrteľných hriechov - lenivosť
-        </h2>
+       <div class="cache-card">
 
-        <p>
-            Typ: Tradičná
-        </p>
+<h2 class="cache-title">
+    7 smrteľných hriechov - lenivosť
+</h2>
 
-        <p>
-            D: 2 | T: 2
-        </p>
+<div class="cache-badges">
+
+    <div class="cache-badge badge-traditional">
+        Tradičná
+    </div>
+
+    <div class="cache-badge badge-dt">
+        D:2 | T:2
+    </div>
+
+</div>	
 
         <div class="cache-description">
            Sedem hlavných (alebo smrteľných) hriechov tvorí tradičný zoznam nerestí v kresťanskej náuke, ktorý definoval pápež Gregor I. v 6. storočí. Tieto hriechy sú považované za korene všetkých ostatných morálnych zlyhaní.
@@ -260,17 +281,23 @@ if(cacheId === "london"){
             ← Späť
         </button>
 
-        <h2>
-            Londýn - New York - Krabi a späť
-        </h2>
+      <div class="cache-card">
 
-        <p>
-            Typ: Multina
-        </p>
+<h2 class="cache-title">
+    Londýn - New York - Krabi a späť
+</h2>
 
-        <p>
-            D: 4.5 | T: 3
-        </p>
+<div class="cache-badges">
+
+    <div class="cache-badge badge-multi">
+        Multina
+    </div>
+
+    <div class="cache-badge badge-dt">
+        D:4,5 | T:3
+    </div>
+
+</div>
 
         <div class="cache-description">
          Táto multina ťa zoberie na krátku cestu okolo sveta. A bytu. 
@@ -322,17 +349,23 @@ if(cacheId === "strelitzia"){
             ← Späť
         </button>
 
-        <h2>
-            Botanicals #02 - Strelitzia Nicolai
-        </h2>
+     <div class="cache-card">
 
-        <p>
-            Typ: Tradičná
-        </p>
+<h2 class="cache-title">
+    Botanicals #02 - Strelitzia Nicolai
+</h2>
 
-        <p>
-            D: 2 | T: 2
-        </p>
+<div class="cache-badges">
+
+    <div class="cache-badge badge-traditional">
+        Tradičná
+    </div>
+
+    <div class="cache-badge badge-dt">
+        D:2 | T:2
+    </div>
+
+</div>	
 
         <div class="cache-description">
             Strelitzia Nicolai, známa tiež ako „biela strelícia“, patrí medzi najimpozantnejšie izbové rastliny. Je obľúbená vďaka svojim veľkým listom a exotickému vzhľadu, ktorý každému interiéru dodáva nádych tropického raja.
@@ -379,17 +412,23 @@ if(cacheId === "knihomol"){
             ← Späť
         </button>
 
-        <h2>
-            Knihomoľ - varenie
-        </h2>
+     <div class="cache-card">
 
-        <p>
-            Typ: Mystery
-        </p>
+<h2 class="cache-title">
+    Knihomoľ - varenie
+</h2>
 
-        <p>
-            D: 3 | T: 1.5
-        </p>
+<div class="cache-badges">
+
+    <div class="cache-badge badge-mystery">
+        Mystery
+    </div>
+
+    <div class="cache-badge badge-dt">
+        D:3 | T:1,5
+    </div>
+
+</div>
      
           <div class="cache-description">
             V našej domácnosti sa nachádza niekoľko
@@ -519,18 +558,23 @@ if(cacheId === "obzerstvo"){
             ← Späť
         </button>
 
-        <h2>
-            7 smrteľných hriechov - obžerstvo
-        </h2>
+        <div class="cache-card">
 
-        <p>
-            Typ: Tradičná
-        </p>
+<h2 class="cache-title">
+    7 smrteľných hriechov - obžerstvo
+</h2>
 
-        <p>
-            D: 2 | T: 1
-        </p>
+<div class="cache-badges">
 
+    <div class="cache-badge badge-traditional">
+        Tradičná
+    </div>
+
+    <div class="cache-badge badge-dt">
+        D:2 | T:1
+    </div>
+
+</div>
         <div class="cache-description">
         Sedem hlavných (alebo smrteľných) hriechov tvorí tradičný zoznam nerestí v kresťanskej náuke, ktorý definoval pápež Gregor I. v 6. storočí. Tieto hriechy sú považované za korene všetkých ostatných morálnych zlyhaní.
 <br><br>
@@ -575,17 +619,23 @@ if(cacheId === "epipremnum"){
             ← Späť
         </button>
 
-        <h2>
-            Botanicals #03 - Epipremnum
-        </h2>
+       <div class="cache-card">
 
-        <p>
-            Typ: Mystery
-        </p>
+<h2 class="cache-title">
+    Botanicals #03 - Epipremnum
+</h2>
 
-        <p>
-            D: 3 | T: 1.5
-        </p>
+<div class="cache-badges">
+
+    <div class="cache-badge badge-mystery">
+        Mystery
+    </div>
+
+    <div class="cache-badge badge-dt">
+        D:3 | T:1,5
+    </div>
+
+</div>
 
         <div class="cache-description">
            Epipremnum či Pothos, ľudovo zvaný aj Divý Janko, je obľúbená ťahavá rastlinka, ktorá už dlhé roky zdobí mnohé poličky a skrine v domácnostiach aj kanceláriách. Obľúbenou sa stala najmä kvôli nízkym nárokom na svetlo a zalievanie. Výskum NASA ju dokonca zaradil medzi rastliny s najlepšou schopnosťou čistiť zo vzduchu toxíny. Rastie relatívne rýchlo a teda je vhodná napríklad pre pestovateľov začiatočníkov, ktorí chcú postupne zazelenať svoj byt. 
@@ -649,17 +699,23 @@ if(cacheId === "zima"){
             ← Späť
         </button>
 
-        <h2>
-            Zima, teplo, teplejšie, horí!
-        </h2>
+       <div class="cache-card">
 
-        <p>
-            Typ: Mystery
-        </p>
+<h2 class="cache-title">
+    Zima, teplo, teplejšie, horí!
+</h2>
 
-        <p>
-            D: 4 | T: 1.5
-        </p>
+<div class="cache-badges">
+
+    <div class="cache-badge badge-mystery">
+        Mystery
+    </div>
+
+    <div class="cache-badge badge-dt">
+        D:4 | T:1,5
+    </div>
+
+</div>
 
         <div class="cache-description">
             V našom byte sa nachádza viacero elektrospotrebičov ktorých primárnym účelom je hriať, alebo chladiť. Zrátaj “chladiče” a “hrejiče”, vynásob ich počet a dopracuješ sa k riešeniu.
@@ -713,17 +769,23 @@ if(cacheId === "dobdob"){
             ← Späť
         </button>
 
-        <h2>
-            ĎOB-ĎOB
-        </h2>
+       <div class="cache-card">
 
-        <p>
-            Typ: Tradičná
-        </p>
+<h2 class="cache-title">
+    ĎOB-ĎOB
+</h2>
 
-        <p>
-            D: 2 | T: 1
-        </p>
+<div class="cache-badges">
+
+    <div class="cache-badge badge-traditional">
+        Tradičná
+    </div>
+
+    <div class="cache-badge badge-dt">
+        D:2 | T:1
+    </div>
+
+</div>	
 
         <div class="cache-description">
             Však ty vieš...
@@ -766,17 +828,23 @@ if(cacheId === "vyhladova"){
             ← Späť
         </button>
 
-        <h2>
-            Výhľadová
-        </h2>
+        <div class="cache-card">
 
-        <p>
-            Typ: Tradičná
-        </p>
+<h2 class="cache-title">
+    Výhľadová
+</h2>
 
-        <p>
-            D: 1.5 | T: 1
-        </p>
+<div class="cache-badges">
+
+    <div class="cache-badge badge-traditional">
+        Tradičná
+    </div>
+
+    <div class="cache-badge badge-dt">
+        D:1,5 | T:1
+    </div>
+
+</div>	
 
         <div class="cache-description">
            Pokochaj sa výhľadom, nadýchaj sa čerstvého vzduchu, užívaj si prítomný moment.
