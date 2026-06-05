@@ -1158,30 +1158,35 @@ if(livingIcons){
 
     if(count >= 3){
 
-        livingIcons.innerHTML =
+        livingIcons.innerHTML = `
+<div class="card-icons">
 
-            (foundCaches.lenivost
-                ? "😊 "
-                : "📍 ")
+    <img src="${
+        foundCaches.lenivost
+        ? "found.png"
+        : "traditional.png"
+    }">
 
-            +
+    <img src="${
+        foundCaches.london
+        ? "found.png"
+        : "multi.png"
+    }">
 
-            (foundCaches.london
-                ? "😊 "
-                : "🌍 ")
+    <img src="${
+        foundCaches.strelitzia
+        ? "found.png"
+        : "traditional.png"
+    }">
 
-            +
+    <img src="${
+        foundCaches.knihomol
+        ? "found.png"
+        : "mystery.png"
+    }">
 
-            (foundCaches.strelitzia
-                ? "😊 "
-                : "📍 ")
-
-            +
-
-            (foundCaches.knihomol
-                ? "😊 "
-                : "❓");
-
+</div>
+`;
     }else{
 
         livingIcons.innerHTML = "";
@@ -1246,31 +1251,35 @@ if(
 
     if(kitchenIcons){
 
-    kitchenIcons.innerHTML =
+   kitchenIcons.innerHTML = `
+<div class="card-icons">
 
-       (foundCaches.pizza
-    ? "😊 "
-    : "📍 ")
+    <img src="${
+        foundCaches.pizza
+        ? "found.png"
+        : "traditional.png"
+    }">
 
-+
+    <img src="${
+        foundCaches.obzerstvo
+        ? "found.png"
+        : "traditional.png"
+    }">
 
-(foundCaches.obzerstvo
-    ? "😊 "
-    : "📍 ")
+    <img src="${
+        foundCaches.epipremnum
+        ? "found.png"
+        : "mystery.png"
+    }">
 
-+
+    <img src="${
+        foundCaches.zima
+        ? "found.png"
+        : "mystery.png"
+    }">
 
-(foundCaches.epipremnum
-    ? "😊 "
-    : "❓ ")
-
-+
-
-(foundCaches.zima
-    ? "😊 "
-    : "❓");
-
-}
+</div>
+`;
 
     if(kitchenButton){
 
@@ -1343,18 +1352,23 @@ if(
 
  if(balconyIcons){
 
-    balconyIcons.innerHTML =
+   balconyIcons.innerHTML = `
+<div class="card-icons">
 
-        (foundCaches.dobdob
-    ? "😊 "
-    : "📍 ")
+    <img src="${
+        foundCaches.dobdob
+        ? "found.png"
+        : "traditional.png"
+    }">
 
-+
+    <img src="${
+        foundCaches.vyhladova
+        ? "found.png"
+        : "traditional.png"
+    }">
 
-(foundCaches.vyhladova
-    ? "😊 "
-    : "📍");
-
+</div>
+`;
 }
     if(balconyButton){
 
