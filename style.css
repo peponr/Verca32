@@ -439,3 +439,39 @@ img.pin-found{
     color:#b7c8e3;
 
 }
+.hint{
+
+    display:none;
+
+    margin-top:14px;
+
+    padding:16px;
+
+    background:#13251a;
+
+    border:1px solid #21452e;
+
+    border-radius:16px;
+
+    color:#b9d4c2;
+
+}
+.found-box{
+
+    margin-top:16px;
+
+    padding:16px;
+
+    background:#1a2f1f;
+
+    border:1px solid #39e75f;
+
+    border-radius:16px;
+
+    text-align:center;
+
+    color:#9fffb2;
+
+    font-weight:600;
+
+}
