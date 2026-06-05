@@ -445,17 +445,23 @@ if(cacheId === "pizza"){
             ← Späť
         </button>
 
-        <h2>
-            Pizza Time!
-        </h2>
+        <div class="cache-card">
 
-        <p>
-            Typ: Tradičná
-        </p>
+<h2 class="cache-title">
+    🍕 Pizza Time!
+</h2>
 
-        <p>
-            D: 2 | T: 1
-        </p>
+<div class="cache-badges">
+
+    <div class="cache-badge badge-traditional">
+        Tradičná
+    </div>
+
+    <div class="cache-badge badge-dt">
+        D:2 | T:1
+    </div>
+
+</div>
 
         <div class="cache-description">
        Rímska? Neapolská? New York style? Chicago deep dish?
@@ -501,7 +507,7 @@ Do Spojených štátov amerických priniesli pizzu talianski imigranti na konci 
               Zalogovať nález
            </button>`
         }
-
+</div>
     `;
 }
 if(cacheId === "obzerstvo"){
