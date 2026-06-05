@@ -1581,3 +1581,95 @@ localStorage.removeItem(
 location.reload();
 
 }
+function resetProgress(){
+
+localStorage.removeItem(
+    "foundCaches"
+);
+
+location.reload();
+
+}
+const carousel =
+document.querySelector(".carousel");
+
+const cards =
+document.querySelectorAll(".card");
+
+const dots =
+document.querySelectorAll(".carousel-dot");
+
+if(carousel){
+
+    carousel.addEventListener(
+        "scroll",
+        updateCarouselState
+    );
+
+    updateCarouselState();
+
+}
+function updateCarouselState(){
+
+    const carousel =
+        document.querySelector(".carousel");
+
+    const center =
+        carousel.scrollLeft +
+        carousel.offsetWidth / 2;
+
+    let activeIndex = 0;
+
+    let closestDistance =
+        Infinity;
+
+    cards.forEach(
+        (card,index) => {
+
+        const cardCenter =
+            card.offsetLeft +
+            card.offsetWidth / 2;
+
+        const distance =
+            Math.abs(
+                center - cardCenter
+            );
+
+        if(
+            distance <
+            closestDistance
+        ){
+
+            closestDistance =
+                distance;
+
+            activeIndex =
+                index;
+
+        }
+
+    });
+
+    cards.forEach(card =>
+        card.classList.remove(
+            "active-card"
+        )
+    );
+
+    dots.forEach(dot =>
+        dot.classList.remove(
+            "active-dot"
+        )
+    );
+
+    cards[activeIndex]
+        .classList.add(
+            "active-card"
+        );
+
+    dots[activeIndex]
+        .classList.add(
+            "active-dot"
+        );
+
+}
