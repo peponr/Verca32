@@ -781,13 +781,13 @@ if(cacheId === "vyhladova"){
         <button
             class="btn"
             onclick="toggleHint('hint-vyhladova')">
-            Hedera Helix
+            Nápoveda
         </button>
 
         <div
             id="hint-vyhladova"
             class="hint">
-            sem doplníme hint
+            Hedera Helix
         </div>
 
         <br><br>
