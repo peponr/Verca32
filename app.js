@@ -1602,22 +1602,8 @@ document.querySelectorAll(".carousel-dot");
 if(carousel){
 
     carousel.addEventListener(
-    "scroll",
-    () => {
-
-        updateCarouselState();
-
-        clearTimeout(
-            carouselTimeout
-        );
-
-        carouselTimeout =
-            setTimeout(
-                checkInfiniteLoop,
-                150
-            );
-
-    }
+        "scroll",
+        updateCarouselState
     );
 
     updateCarouselState();
@@ -1685,69 +1671,5 @@ function updateCarouselState(){
         .classList.add(
             "active-dot"
         );
-
-}
-let carouselTimeout;
-function checkInfiniteLoop(){
-
-    const carousel =
-        document.querySelector(
-            ".carousel"
-        );
-
-    const cards =
-        document.querySelectorAll(
-            ".card"
-        );
-
-    if(!carousel) return;
-
-    const firstCard =
-        cards[0];
-
-    const lastCard =
-        cards[cards.length - 1];
-
-    const threshold = 40;
-
-    if(
-
-        carousel.scrollLeft
-        <= threshold
-
-    ){
-
-        carousel.scrollTo({
-
-            left:
-                lastCard.offsetLeft,
-
-            behavior:"smooth"
-
-        });
-
-    }
-
-    const maxScroll =
-        carousel.scrollWidth -
-        carousel.clientWidth;
-
-    if(
-
-        carousel.scrollLeft >=
-        maxScroll - threshold
-
-    ){
-
-        carousel.scrollTo({
-
-            left:
-                firstCard.offsetLeft,
-
-            behavior:"smooth"
-
-        });
-
-    }
 
 }
