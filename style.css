@@ -515,3 +515,25 @@ img.pin-found{
     }
 
 }
+.active-card{
+
+    transform:scale(1);
+
+    opacity:1;
+
+    z-index:2;
+
+}
+
+.card{
+
+    opacity:.75;
+
+}
+.active-card{
+
+    box-shadow:
+        0 12px 35px rgba(0,0,0,.45),
+        0 0 20px rgba(46,204,113,.15);
+
+}
