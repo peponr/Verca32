@@ -44,7 +44,7 @@ body{
 
   background:#020508;
 
-  border:1px solid #21452e;
+  border:1px solid #25a854;
 
   border-radius:26px;
 
@@ -77,24 +77,26 @@ body{
 
   background:
 
-    linear-gradient(
+  linear-gradient(
 
-      to bottom,
+    to bottom,
 
-      rgba(0,0,0,0) 0%,
+    rgba(0,0,0,0) 0%,
 
-      rgba(0,0,0,.55) 25%,
+    rgba(0,0,0,.75) 15%,
 
-      rgba(2,5,8,.95) 100%
+    rgba(0,0,0,.95) 45%,
 
-    );
+    rgba(2,5,8,1) 100%
 
-  margin-top:-70px;
+  );
+
+  margin-top:-90px;
 }
 
 .btn{
   width:100%;
-  background:#2ecc71;
+  background:#25a854;
   color:white;
   border:none;
   border-radius:12px;
@@ -395,7 +397,7 @@ z-index:2;
 .card-icons{
 
     display:flex;
-
+margin-top:24px;
     gap:10px;
 
     justify-content:center;
