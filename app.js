@@ -1124,10 +1124,29 @@ const icons =
 
 if(icons){
 
-    icons.innerHTML =
-        (foundCaches.smilstvo ? "😊 " : "📍 ") +
-        (foundCaches.yucca ? "😊 " : "📍 ") +
-        (foundCaches.pig ? "😊 " : "❓");
+    icons.innerHTML = `
+        <div class="card-icons">
+
+            <img src="${
+                foundCaches.smilstvo
+                ? "found.png"
+                : "traditional.png"
+            }">
+
+            <img src="${
+                foundCaches.yucca
+                ? "found.png"
+                : "traditional.png"
+            }">
+
+            <img src="${
+                foundCaches.pig
+                ? "found.png"
+                : "mystery.png"
+            }">
+
+        </div>
+    `;
 
 }
 const livingIcons =
