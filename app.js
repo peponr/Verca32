@@ -71,7 +71,9 @@ Smilstvo (Luxuria): Prehnané telesné žiadostivosti a nezodpovedné sexuálne 
 ${
   foundCaches.smilstvo
   ?
-  `<p>😊 Keška už bola nájdená.</p>`
+  `<div class="found-box">
+    ✅ Keška už bola nájdená
+</div>`
   :
   `<button
       class="btn"
