@@ -359,3 +359,83 @@ img.pin-found{
     height:24px;
 
 }
+.cache-card{
+
+    background:#102015;
+
+    border:1px solid #21452e;
+
+    border-radius:24px;
+
+    padding:20px;
+
+    margin:20px;
+
+    box-shadow:
+        0 8px 25px rgba(0,0,0,.35);
+
+}
+.cache-title{
+
+    margin-top:0;
+
+    margin-bottom:16px;
+
+    font-size:28px;
+
+    font-weight:700;
+
+}
+.cache-badges{
+
+    display:flex;
+
+    gap:10px;
+
+    flex-wrap:wrap;
+
+    margin-bottom:16px;
+
+}
+.cache-badge{
+
+    padding:6px 12px;
+
+    border-radius:999px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+}
+.badge-traditional{
+
+    background:#184d2d;
+
+    color:#7dff9c;
+
+}
+
+.badge-mystery{
+
+    background:#3b1958;
+
+    color:#d18cff;
+
+}
+
+.badge-multi{
+
+    background:#5c3300;
+
+    color:#ffb45c;
+
+}
+
+.badge-dt{
+
+    background:#1b2430;
+
+    color:#b7c8e3;
+
+}
