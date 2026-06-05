@@ -579,3 +579,18 @@ img.pin-found{
         0 0 10px rgba(57,231,95,.7);
 
 }
+.swipe-hint{
+
+    text-align:center;
+
+    color:#7d8f84;
+
+    font-size:13px;
+
+    letter-spacing:1px;
+
+    margin-bottom:20px;
+
+    opacity:.8;
+
+}
