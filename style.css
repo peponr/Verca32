@@ -37,27 +37,34 @@ body{
 }
 
 .card{
+
   flex:0 0 85%;
 
   scroll-snap-align:center;
 
   background:#102015;
 
-  border:2px solid #2ecc71;
+  border:1px solid #21452e;
 
-  border-radius:22px;
+  border-radius:26px;
 
   overflow:hidden;
+
+  box-shadow:
+    0 8px 25px rgba(0,0,0,.35);
+
 }
 
 .card img{
-  width:100%;
-  height:240px;
-  object-fit:cover;
-}
 
+  width:100%;
+  height:260px;
+
+  object-fit:cover;
+
+}
 .content{
-  padding:16px;
+  padding:20px;
 }
 
 .btn{
@@ -311,5 +318,25 @@ img.pin-found{
 .reset-btn{
 
     opacity:.75;
+
+}
+.content h2{
+
+    margin-top:0;
+
+    margin-bottom:14px;
+
+    font-size:24px;
+
+}
+
+#spalna-icons,
+#living-room-icons,
+#kitchen-icons,
+#balcony-icons{
+
+    font-size:22px;
+
+    min-height:28px;
 
 }
