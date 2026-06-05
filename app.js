@@ -1574,20 +1574,22 @@ updateProgress();
 
 function resetProgress(){
 
-localStorage.removeItem(
-    "foundCaches"
-);
+    const confirmed =
+        confirm(
+            "Týmto vyresetuješ svoj postup v hre.\n\nChceš pokračovať?"
+        );
 
-location.reload();
+    if(!confirmed){
 
-}
-function resetProgress(){
+        return;
 
-localStorage.removeItem(
-    "foundCaches"
-);
+    }
 
-location.reload();
+    localStorage.removeItem(
+        "foundCaches"
+    );
+
+    location.reload();
 
 }
 const carousel =
