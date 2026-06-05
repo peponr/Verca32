@@ -1213,7 +1213,7 @@ const progress =
 if(progress){
 
     progress.innerText =
-        "📍 " + count + " / 13 kešiek";
+        "🟢 " + count + " / 13 kešiek";
 
 }
 
