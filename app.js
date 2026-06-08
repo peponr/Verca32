@@ -447,6 +447,16 @@ if(cacheId === "knihomol"){
 
             Pomocou nich vyrieš úlohy
             a dopracuj sa k výslednému riešeniu.
+<br>
+A = počet strúčikov cesnaku potrebných na prípravu kreviet s cesnakom a čerstvými cestovinami
+<br>
+B = ako dlho sa na panvici smažia rezne?
+<br>
+C = počet jedál z regiónu Liptov 
+<br>
+D = množstvo sacharidov v šaláte z restovaných paprík
+<br>
+X = DBAC
         </div>
 
         <button
@@ -458,7 +468,7 @@ if(cacheId === "knihomol"){
         <div
             id="hint-knihomol"
             class="hint">
-            Pohlreich, Ramsay, 1001 receptov
+            Pohlreich - Princíp varenia - Sulík/Ihnačák - 1000 klasických receptov
         </div>
 
         <br><br>
@@ -1510,7 +1520,7 @@ function checkKnihomol(){
             "knihomol-answer"
         ).value;
 
-    if(answer == "1234"){
+    if(answer == "9624"){
 
         logCache(
             "knihomol"
