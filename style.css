@@ -171,18 +171,18 @@ display:flex;
 
 }
 .pin-smilstvo{
-  left:28%;
-  top:65%;
-}
-
-.pin-yucca{
-  right:18%;
+  left:5%;
   top:28%;
 }
 
+.pin-yucca{
+  right:15%;
+  top:33%;
+}
+
 .pin-pig{
-  left:58%;
-  top:45%;
+  right:15%;
+  top:5%;
 }
 
 .cache-content{
