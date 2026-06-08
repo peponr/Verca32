@@ -189,7 +189,6 @@ Keď prasiatko otvoril, našiel v ňom 65 €.
 Koľko eur mal Tomáš na začiatku?
 <br><br>
 <br><br>
-<br><br>
 … a možno by po zalogovaní nebol zlý nápad sa do prasiatka aj pozrieť 😊
     </div>
     
