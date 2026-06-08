@@ -224,8 +224,8 @@ display:flex;
 }
 
 .pin-pizza{
-    left:30%;
-    top:40%;
+    left:35%;
+    top:50%;
 }
 
 .pin-obzerstvo{
@@ -239,19 +239,19 @@ display:flex;
 }
 
 .pin-zima{
-    left:15%;
-    top:38%;
+    left:19%;
+    top:28%;
 }
 
 .pin-dobdob{
-    left:35%;
-    top:55%;
-}
-
-.pin-vyhladova{
     left:70%;
     top:35%;
 }
+
+.pin-vyhladova{
+  left:35%;
+    top:55%;
+  }
 
 input,
 textarea,
