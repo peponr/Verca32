@@ -16,17 +16,19 @@ function showScreen(id){
 }
 function startVictoryMessage(){
 
-    const text =
+    const lines = [
 
-`...ale !
+        "...ale !",
 
-Tu však naše dobrodružstvo nekončí.
+        "Tu však naše dobrodružstvo nekončí.",
 
-Posledná, bonusová keška ťa už čaká offline.
+        "Posledná, bonusová keška ťa už čaká offline.",
 
-Prvá indícia na teba čaká v Moschino kabelke.
+        "Prvá indícia na teba čaká v Moschino kabelke.",
 
-Veľa šťastia.`;
+        "Veľa šťastia."
+
+    ];
 
     const box =
         document.getElementById(
@@ -35,22 +37,50 @@ Veľa šťastia.`;
 
     box.innerHTML = "";
 
-    let i = 0;
+    let currentLine = 0;
 
-    const timer =
-        setInterval(() => {
+    function typeLine(){
 
-            box.innerHTML += text[i];
+        if(currentLine >= lines.length){
+            return;
+        }
 
-            i++;
+        const line = lines[currentLine];
 
-            if(i >= text.length){
+        let i = 0;
 
-                clearInterval(timer);
+        const lineDiv =
+            document.createElement("div");
 
-            }
+        lineDiv.style.marginBottom = "20px";
 
-        }, 40);
+        box.appendChild(lineDiv);
+
+        const typing =
+            setInterval(() => {
+
+                lineDiv.innerHTML += line[i];
+
+                i++;
+
+                if(i >= line.length){
+
+                    clearInterval(typing);
+
+                    currentLine++;
+
+                    setTimeout(
+                        typeLine,
+                        1000
+                    );
+
+                }
+
+            }, 40);
+
+    }
+
+    typeLine();
 
 }
 function openCache(cacheId){
