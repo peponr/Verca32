@@ -817,4 +817,20 @@ margin-top:24px;
 }
 
 
+.victory-message{
 
+    margin-top:40px;
+
+    max-width:320px;
+
+    text-align:center;
+
+    color:#b7c4cc;
+
+    line-height:1.8;
+
+    min-height:180px;
+
+    white-space:pre-line;
+
+}
