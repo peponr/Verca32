@@ -969,7 +969,7 @@ if(
 
 ){
 
-    showScreen("bonus");
+    showScreen("victory");
 
 }else{
 
