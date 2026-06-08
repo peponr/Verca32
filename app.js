@@ -14,6 +14,45 @@ function showScreen(id){
     .classList.add("active");
 
 }
+function startVictoryMessage(){
+
+    const text =
+
+`...ale !
+
+Tu však naše dobrodružstvo nekončí.
+
+Posledná, bonusová keška ťa už čaká offline.
+
+Prvá indícia na teba čaká v Moschino kabelke.
+
+Veľa šťastia.`;
+
+    const box =
+        document.getElementById(
+            "victory-message"
+        );
+
+    box.innerHTML = "";
+
+    let i = 0;
+
+    const timer =
+        setInterval(() => {
+
+            box.innerHTML += text[i];
+
+            i++;
+
+            if(i >= text.length){
+
+                clearInterval(timer);
+
+            }
+
+        }, 40);
+
+}
 function openCache(cacheId){
 
     const cacheScreen =
@@ -970,6 +1009,12 @@ if(
 ){
 
     showScreen("victory");
+
+setTimeout(() => {
+
+    startVictoryMessage();
+
+}, 2000);
 
 }else{
 
