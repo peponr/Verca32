@@ -448,6 +448,7 @@ if(cacheId === "knihomol"){
             Pomocou nich vyrieš úlohy
             a dopracuj sa k výslednému riešeniu.
 <br>
+<br>
 A = počet strúčikov cesnaku potrebných na prípravu kreviet s cesnakom a čerstvými cestovinami
 <br>
 B = ako dlho sa na panvici smažia rezne?
@@ -455,6 +456,7 @@ B = ako dlho sa na panvici smažia rezne?
 C = počet jedál z regiónu Liptov 
 <br>
 D = množstvo sacharidov v šaláte z restovaných paprík
+<br>
 <br>
 X = DBAC
         </div>
@@ -676,7 +678,7 @@ Listy majú zväčša tvar natiahnutého srdca. Najčastejšie sú zelenej farby
 <br><br>
 Pothosy sa môžu dorastať až do dĺžky 20 metrov. V domácich podmienkach mávajú väčšinou okolo jedného či dvoch metrov. Ak sú dlhšie tak ich potom ľudia nastrihajú, zakorenia a zasadia opäť do kvetináča aby zahustili rastlinku. Listy sa môžu dorásť do veľkosti 100 na 45 centimetrov. Bežne v domácnosti však mávajú len veľkosť do 20 centimetrov.
 <br><br>
-Ku keške: vynásob počet stoniek prevísajúcich od vrchu kuchynskej linky počtom listov pod úrovňou podpornej tyče.
+Ku keške: vynásob počet stoniek viditeľne vyrastajúcich z kvetináča počtom živých listov ťahajúcich sa popri kuchynskej skrinke.
 
         </div>
 
@@ -1542,7 +1544,7 @@ function checkEpipremnum(){
             "epipremnum-answer"
         ).value;
 
-    if(answer == "1234"){
+    if(answer == "56"){
 
         logCache(
             "epipremnum"
