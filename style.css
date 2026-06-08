@@ -121,9 +121,14 @@ body{
 }
 
 .room-image img{
-  width:100%;
+  width:85%;
   height:350px;
   object-fit:cover;
+  position:relative;
+
+    display:flex;
+
+    justify-content:center;
 }
 
 .cache-pin{
