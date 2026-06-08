@@ -117,7 +117,13 @@ body{
 }
 
 .room-image{
-  position:relative;
+  osition:relative;
+
+    display:flex;
+
+    justify-content:center;
+
+    margin-top:40px;
 }
 
 .room-image img{
@@ -129,6 +135,11 @@ body{
     display:flex;
 
     justify-content:center;
+  border:1px solid rgba(57,231,95,.20);
+
+padding:8px;
+
+background:#05070a;
 }
 
 .cache-pin{
