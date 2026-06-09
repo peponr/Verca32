@@ -381,7 +381,7 @@ if(cacheId === "london"){
          Na štyroch stagoch nájdeš 4 číslice, ktoré ti pomôžu nájsť riešenie úlohy.
          <br><br>
 
-X = *TBD - tu bude komplikovaný výpočet s premennými A,B,C,D - tak aby dával troj, alebo štvorciferný výsledok - podľa toho, aký zámok zoženiem v obchode. Doplníme.
+X = (A + B)² + C × D² × (A + C)
 <br><br>
 K finálu: som miestnosť v tvojom byte, ale vkročiť do mňa nemôžeš.
 <br><br>
