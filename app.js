@@ -820,7 +820,7 @@ if(cacheId === "zima"){
         <div class="cache-description">
             V našom byte sa nachádza viacero elektrospotrebičov ktorých primárnym účelom je hriať, alebo chladiť. Zrátaj “chladiče” a “hrejiče”, vynásob ich počet a dopracuješ sa k riešeniu.
 <br><br>
-Poznámka: hľadaj iba v kuchyni, obývačke a kúpeľni.
+Poznámka: hľadaj iba v kuchyni a obývačke. Pozeraj sa pozorne.
         </div>
 
         <button
@@ -1641,7 +1641,7 @@ function checkZima(){
             "zima-answer"
         ).value;
 
-    if(answer == "1234"){
+    if(answer == "36"){
 
         logCache(
             "zima"
