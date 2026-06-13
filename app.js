@@ -132,7 +132,7 @@ Smilstvo (Luxuria): Prehnané telesné žiadostivosti a nezodpovedné sexuálne 
             <div
                 id="hint-smilstvo"
                 class="hint">
-                Vnútri
+                Vrrrrrrrrrrn
             </div>
 
             <br><br>
