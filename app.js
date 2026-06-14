@@ -687,7 +687,7 @@ Obžerstvo (lat. gula): Prehnané a sebecké prejedanie sa či nestriedmosť v p
         <div
             id="hint-obzerstvo"
             class="hint">
-           Od rána mám chuť...
+           Zospodu
         </div>
 
         <br><br>
